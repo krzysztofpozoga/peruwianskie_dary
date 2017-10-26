@@ -1,6 +1,7 @@
 nav {
   width: 100%;
   .menu {
+    display: none;
     list-style-type: none;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +31,12 @@ nav {
     }
     @media(min-width: 768px) {
       display: flex;
+      align-items: center;
+      justify-content: center;
       li{
         background-color: inherit;
         text-align: center;
-        width: 100%;
+        width: 70%;
         margin-top: 0px;
         border: 0px;
         &:hover {

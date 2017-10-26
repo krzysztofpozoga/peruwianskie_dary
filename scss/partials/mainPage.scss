@@ -1,0 +1,77 @@
+.mainPage {
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(min-width: 768px) {
+      flex-direction: row;
+    }
+    .banner {
+      width: 100%;
+      min-height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+      @media(min-width: 768px) {
+        width: 50%;
+      }
+      h1 {
+        color: #00724A;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+        font-size: 1.5em;
+        font-family: 'Sedgwick Ave Display', Arial, sans-serif;
+        text-align: center;
+        @media(min-width: 768px) {
+          font-size: 1.5em;
+        }
+        @media(min-width: 1024px) {
+          font-size: 2em;
+        }
+      }
+    }
+
+    .welcomeText {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      @media(min-width: 580px){
+        width: 80%;
+      }
+      .paragraphs {
+
+        border-radius: 15px;
+        background-image: url(../images/product_background_sample.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 80px 0px 60px 0px;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
+        // justify-content: center;
+        p {
+          font-family: 'Caveat Brush', cursive;
+          color: black;
+          text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+          text-align: justify;
+          padding: 5px 30px 5px 30px;
+          font-size: 1.4em;
+        }
+        // @media(min-width: 420px){
+        //   font-size: 1.2em;
+        // }
+        // @media(min-width: 520px){
+        //   font-size: 1.3em;
+        // }
+        @media(min-width: 768px){
+          font-size: 1.4em;
+          min-height: 75vh;
+        }
+      }
+    }
+  }
+}
