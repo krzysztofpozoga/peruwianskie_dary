@@ -15,6 +15,7 @@ header {
   .searcher {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
     .search {
       width: 100%;
       margin-top: 5px;
@@ -34,10 +35,6 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         width: 25%;
-      }
-      @media(min-width: 768px) {
-        display: flex;
-        width: 30%
       }
     }
   }

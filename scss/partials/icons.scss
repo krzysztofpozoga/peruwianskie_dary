@@ -1,0 +1,31 @@
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    img {
+      width: 160px;
+      height: 125px;
+    }
+  }
+  .searchIcons {
+    display: flex;
+    #menuIcon, #searchIcon {
+      width: 48px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin-right: 5px;
+    }
+    @media(min-width: 768px) {
+      #menuIcon {
+        display: none;
+      }
+      #searchIcon {
+        display: none;
+      }
+    }
+  }
+}
