@@ -1,6 +1,9 @@
 import React from 'react';
 
 class Header extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render(){
     return (
       <header>
@@ -13,8 +16,8 @@ class Header extends React.Component {
           <div className="row">
             <div className="searcher">
               <form className="search">
-                <input type="text" placeholder="  Wyszukaj na stronie..."/>
-                <input type="submit" value="Szukaj"/>
+                <input type="text" placeholder="  Wyszukaj na stronie..." />
+                <input type="submit" value="Szukaj" onClick={this.props.searchProduct}/>
               </form>
             </div>
           </div>
