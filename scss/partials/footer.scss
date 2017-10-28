@@ -11,49 +11,6 @@ footer {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      .herbariumLink {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        // border: 2px solid black;
-        border-radius: 15px;
-        margin-right: 5px;
-        width: 48px;
-        height: 48px;
-        img {
-          height: 100%;
-          width: 100%;
-        }
-        div {
-          display: none;
-          font-family: 'Sedgwick Ave Display', Arial, sans-serif;
-          font-size: 1.2em;
-          color: white;
-          text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-        }
-
-        @media(min-width: 768px) {
-          width: 192px;
-          height: 96px;
-          background-color: inherit;
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.7);
-          }
-          a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img {
-              height: 70%;
-              width: 70%;
-            }
-            div {
-              display: block;
-            }
-          }
-        }
-      }
       @media(min-width: 768px) {
         font-size: 0.8em;
       }
