@@ -1,41 +1,50 @@
 header {
   display: flex;
-  flex-direction: column;
-  .facebookLike {
+  justify-content: center;
+  .container {
     display: flex;
-    justify-content: flex-end;
-    button {
-      width: 100px;
-      color: white;
-      background-color: #365899;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  }
-  .searcher {
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     width: 100%;
-    .search {
-      width: 100%;
-      margin-top: 5px;
-      border: 1px dotted grey;
+    .facebookLike {
       display: flex;
-      input[type="text"] {
-        width: 75%;
-        height: 25px;
-        border: none;
-        background-color: rgba(255, 255, 255, 0.7);
-      }
-      input[type="submit"] {
-        cursor:pointer;
+      justify-content: flex-end;
+      button {
+        width: 100px;
+        color: white;
+        background-color: #365899;
         border-radius: 5px;
-        background-color: #00724A;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 25%;
+        cursor: pointer;
       }
+    }
+    .searcher {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .search {
+        width: 100%;
+        margin-top: 5px;
+        border: 1px dotted grey;
+        display: flex;
+        input[type="text"] {
+          width: 75%;
+          height: 25px;
+          border: none;
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+        input[type="submit"] {
+          cursor:pointer;
+          border-radius: 5px;
+          background-color: #00724A;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 25%;
+        }
+      }
+    }
+    @media(min-width: 768px) {
+      width: 80%;
     }
   }
 }

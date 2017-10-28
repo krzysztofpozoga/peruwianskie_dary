@@ -1,5 +1,4 @@
 #main {
-  min-height: 100vh;
   min-width: 100vw;
   background-image: url(../images/b.jpg);
   background-position: center;
@@ -9,8 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  @media(min-width: 768px) {
-    flex-direction: row;
-    background-image: inherit;
-  }
+  // @media(min-width: 768px) {
+  //   background-image: inherit;
+  // }
 }
