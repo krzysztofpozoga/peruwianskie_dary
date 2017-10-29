@@ -8229,6 +8229,7 @@ var SuszoneZiola = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      console.log(this.state.products);
       var products = this.state.products.map(function (elem) {
         return _react2.default.createElement(
           'div',

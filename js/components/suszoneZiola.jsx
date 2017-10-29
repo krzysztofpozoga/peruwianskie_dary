@@ -22,6 +22,7 @@ class SuszoneZiola extends React.Component {
     this.getProductData();
   }
   render(){
+    console.log(this.state.products);
     const products = this.state.products.map(elem => {
       return (
         <div key={elem.id} className="product">
