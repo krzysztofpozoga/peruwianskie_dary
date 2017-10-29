@@ -11,6 +11,9 @@ nav {
     // z-index: 1;
     // overflow-x: hidden;
     // transition: 0.5s;
+    a {
+      text-decoration: none;
+    }
     li {
       font-size: 1.2em;
       color: white;
@@ -33,6 +36,7 @@ nav {
       display: flex;
       flex-direction: row;
       margin-bottom: 10px;
+      justify-content: space-around;
       li{
         background-color: inherit;
         text-align: center;
@@ -50,6 +54,11 @@ nav {
           color: #00724A;
         }
       }
+    }
+  }
+  .activeLink {
+    li{
+      color: #00724A;
     }
   }
 }
