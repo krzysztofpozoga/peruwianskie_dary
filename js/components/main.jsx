@@ -1,28 +1,22 @@
 import React from 'react';
-import Header from './header.jsx';
-import Icons from './icons.jsx';
-import Nav from './nav.jsx';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
+import Template from './template.jsx';
 import MainPage from './mainPage.jsx';
-import Footer from './footer.jsx';
 
 class Main extends React.Component {
-  searchProduct = (event) => {
-      event.preventDefault();
-      console.log('AAAA');
-    }
   render(){
     return (
-      <div>
-        <div id="main">
-            <Header searchProduct={this.searchProduct}/>
-            <Icons />
-            <Nav />
-          <div className="content">
-            <MainPage />
-          </div>
-            <Footer />
-        </div>
-      </div>
+      <Router history={hashHistory}>
+        <Route path="/" component={Template}>
+          <IndexRoute component={MainPage} />
+          <Route path="/ziola" component={MainPage} />
+          <Route path="/maka" component={MainPage} />
+          <Route path="/wyciagizziol" component={MainPage} />
+          <Route path="/superfood" component={MainPage} />
+          <Route path="/contact" component={MainPage} />
+          <Route path="/about" component={MainPage} />
+        </Route>
+      </Router>
     )
   }
 }

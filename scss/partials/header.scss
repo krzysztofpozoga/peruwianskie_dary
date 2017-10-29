@@ -18,9 +18,12 @@ header {
       }
     }
     .searcher {
-      display: flex;
+      display: none;
       justify-content: flex-end;
       width: 100%;
+      @media(min-width: 768px) {
+        display: flex;
+      }
       .search {
         width: 100%;
         margin-top: 5px;
