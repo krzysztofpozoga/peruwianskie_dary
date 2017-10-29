@@ -3,6 +3,8 @@ import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-rou
 import Template from './template.jsx';
 import MainPage from './mainPage.jsx';
 import SuszoneZiola from './suszoneZiola.jsx';
+import AboutShop from './aboutShop.jsx';
+import Contact from './contact.jsx';
 
 class Main extends React.Component {
   render(){
@@ -14,8 +16,8 @@ class Main extends React.Component {
           <Route path="/maka" component={MainPage} />
           <Route path="/wyciagizziol" component={MainPage} />
           <Route path="/superfood" component={MainPage} />
-          <Route path="/contact" component={MainPage} />
-          <Route path="/about" component={MainPage} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={AboutShop} />
         </Route>
       </Router>
     )

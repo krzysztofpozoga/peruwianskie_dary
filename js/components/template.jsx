@@ -5,6 +5,8 @@ import Nav from './nav.jsx';
 import Footer from './footer.jsx';
 import MainPage from './mainPage.jsx';
 import SuszoneZiola from './suszoneZiola.jsx';
+import AboutShop from './aboutShop.jsx';
+import Contact from './contact.jsx';
 
 class Template extends React.Component {
   constructor(props){
