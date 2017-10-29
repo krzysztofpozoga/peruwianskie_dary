@@ -2,6 +2,7 @@ import React from 'react';
 import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 import Template from './template.jsx';
 import MainPage from './mainPage.jsx';
+import SuszoneZiola from './suszoneZiola.jsx';
 
 class Main extends React.Component {
   render(){
@@ -9,7 +10,7 @@ class Main extends React.Component {
       <Router history={hashHistory}>
         <Route path="/" component={Template}>
           <IndexRoute component={MainPage} />
-          <Route path="/ziola" component={MainPage} />
+          <Route path="/suszone-ziola" component={SuszoneZiola} />
           <Route path="/maka" component={MainPage} />
           <Route path="/wyciagizziol" component={MainPage} />
           <Route path="/superfood" component={MainPage} />

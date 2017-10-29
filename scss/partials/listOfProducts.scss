@@ -1,0 +1,100 @@
+.listOfProducts {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    @media(min-width: 580px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @media(min-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+.product {
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  height: 350px;
+  width: 250px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/product_background_sample.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  h2 {
+    text-align: center;
+    min-width: 30vh;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .product_front {
+    margin-bottom: 10px;
+    min-width: 200px;
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* Flipper */
+    backface-visibility: hidden;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+    z-index: 2;
+  	transform: rotateY(0deg);
+  }
+  .product_back {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    background-color: white;
+    text-align: center;
+    min-width: 200px;
+    min-height: 200px;
+    backface-visibility: hidden;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+    transform: rotateY(180deg);
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  button {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    min-width: 30vh;
+    border-radius: 5px;
+    background-image: url(../images/buy_button_sample.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+  }
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container {
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
