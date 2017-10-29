@@ -14404,10 +14404,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Icons = function (_React$Component) {
   _inherits(Icons, _React$Component);
 
-  function Icons() {
+  function Icons(props) {
     _classCallCheck(this, Icons);
 
-    return _possibleConstructorReturn(this, (Icons.__proto__ || Object.getPrototypeOf(Icons)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Icons.__proto__ || Object.getPrototypeOf(Icons)).call(this, props));
   }
 
   _createClass(Icons, [{
@@ -14441,8 +14441,8 @@ var Icons = function (_React$Component) {
                 )
               )
             ),
-            _react2.default.createElement("img", { id: "searchIcon", src: "images/search.png" }),
-            _react2.default.createElement("img", { id: "menuIcon", src: "images/menu.png" })
+            _react2.default.createElement("img", { id: "searchIcon", src: "images/search.png", onClick: this.props.showAndHideSearcher }),
+            _react2.default.createElement("img", { id: "menuIcon", src: "images/menu.png", onClick: this.props.showAndHideMenu })
           )
         )
       );
@@ -14554,10 +14554,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Nav = function (_React$Component) {
   _inherits(Nav, _React$Component);
 
-  function Nav() {
+  function Nav(props) {
     _classCallCheck(this, Nav);
 
-    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
   }
 
   _createClass(Nav, [{
@@ -14568,7 +14568,7 @@ var Nav = function (_React$Component) {
         null,
         _react2.default.createElement(
           "ul",
-          { className: "menu" },
+          { className: "menu", style: { display: this.props.display } },
           _react2.default.createElement(
             _reactRouter.IndexLink,
             { to: "/", activeClassName: "activeLink" },
@@ -14690,21 +14690,37 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Template = function (_React$Component) {
   _inherits(Template, _React$Component);
 
-  function Template() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
+  function Template(props) {
     _classCallCheck(this, Template);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    var _this = _possibleConstructorReturn(this, (Template.__proto__ || Object.getPrototypeOf(Template)).call(this, props));
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Template.__proto__ || Object.getPrototypeOf(Template)).call.apply(_ref, [this].concat(args))), _this), _this.searchProduct = function (event) {
+    _this.searchProduct = function (event) {
       event.preventDefault();
       console.log('AAAA');
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    };
+
+    _this.showAndHideMenu = function (event) {
+      if (_this.state.menuDisplay === 'none') {
+        _this.setState({
+          menuDisplay: 'flex'
+        });
+      } else {
+        _this.setState({
+          menuDisplay: 'none'
+        });
+      }
+    };
+
+    _this.showAndHideSearcher = function (event) {
+      console.log('Searcher');
+    };
+
+    _this.state = {
+      menuDisplay: 'none',
+      searcherDisplay: 'none'
+    };
+    return _this;
   }
 
   _createClass(Template, [{
@@ -14717,8 +14733,8 @@ var Template = function (_React$Component) {
           'div',
           { id: 'all' },
           _react2.default.createElement(_header2.default, { searchProduct: this.searchProduct }),
-          _react2.default.createElement(_icons2.default, null),
-          _react2.default.createElement(_nav2.default, null),
+          _react2.default.createElement(_icons2.default, { showAndHideMenu: this.showAndHideMenu, showAndHideSearcher: this.showAndHideSearcher }),
+          _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay }),
           _react2.default.createElement(
             'div',
             { className: 'content' },

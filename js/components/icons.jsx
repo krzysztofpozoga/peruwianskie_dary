@@ -1,6 +1,9 @@
 import React from 'react';
 
 class Icons extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render(){
     return (
       <div className="icons">
@@ -15,8 +18,8 @@ class Icons extends React.Component {
                 <div>ZIELNIK</div>
               </a>
             </div>
-            <img id="searchIcon" src="images/search.png"/>
-            <img id="menuIcon" src="images/menu.png"/>
+            <img id="searchIcon" src="images/search.png" onClick={this.props.showAndHideSearcher}/>
+            <img id="menuIcon" src="images/menu.png" onClick={this.props.showAndHideMenu}/>
           </div>
         </div>
       </div>
