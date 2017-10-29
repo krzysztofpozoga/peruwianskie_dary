@@ -14357,7 +14357,7 @@ var Header = function (_React$Component) {
             { className: "row" },
             _react2.default.createElement(
               "div",
-              { className: "searcher" },
+              { className: "searcher", style: { display: this.props.display } },
               _react2.default.createElement(
                 "form",
                 { className: "search" },
@@ -14701,24 +14701,32 @@ var Template = function (_React$Component) {
     };
 
     _this.showAndHideMenu = function (event) {
-      if (_this.state.menuDisplay === 'none') {
+      if (_this.state.menuDisplay === '') {
         _this.setState({
           menuDisplay: 'flex'
         });
       } else {
         _this.setState({
-          menuDisplay: 'none'
+          menuDisplay: ''
         });
       }
     };
 
     _this.showAndHideSearcher = function (event) {
-      console.log('Searcher');
+      if (_this.state.searcherDisplay === '') {
+        _this.setState({
+          searcherDisplay: 'flex'
+        });
+      } else {
+        _this.setState({
+          searcherDisplay: ''
+        });
+      }
     };
 
     _this.state = {
-      menuDisplay: 'none',
-      searcherDisplay: 'none'
+      menuDisplay: '',
+      searcherDisplay: ''
     };
     return _this;
   }
@@ -14732,7 +14740,7 @@ var Template = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { id: 'all' },
-          _react2.default.createElement(_header2.default, { searchProduct: this.searchProduct }),
+          _react2.default.createElement(_header2.default, { searchProduct: this.searchProduct, display: this.state.searcherDisplay }),
           _react2.default.createElement(_icons2.default, { showAndHideMenu: this.showAndHideMenu, showAndHideSearcher: this.showAndHideSearcher }),
           _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay }),
           _react2.default.createElement(

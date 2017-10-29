@@ -9,8 +9,8 @@ class Template extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      menuDisplay: 'none',
-      searcherDisplay: 'none'
+      menuDisplay: '',
+      searcherDisplay: ''
     }
   }
   searchProduct = (event) => {
@@ -19,26 +19,34 @@ class Template extends React.Component {
   }
 
   showAndHideMenu = (event) => {
-    if (this.state.menuDisplay === 'none') {
+    if (this.state.menuDisplay === '') {
       this.setState({
         menuDisplay: 'flex'
       })
     } else {
       this.setState({
-        menuDisplay: 'none'
+        menuDisplay: ''
       })
     }
   }
 
   showAndHideSearcher = (event) => {
-    console.log('Searcher');
+    if (this.state.searcherDisplay === '') {
+      this.setState({
+        searcherDisplay: 'flex'
+      })
+    } else {
+      this.setState({
+        searcherDisplay: ''
+      })
+    }
   }
 
   render(){
     return (
       <div>
         <div id="all">
-          <Header searchProduct={this.searchProduct}/>
+          <Header searchProduct={this.searchProduct} display={this.state.searcherDisplay}/>
           <Icons showAndHideMenu={this.showAndHideMenu} showAndHideSearcher={this.showAndHideSearcher}/>
           <Nav display={this.state.menuDisplay}/>
           <div className="content">{this.props.children}</div>

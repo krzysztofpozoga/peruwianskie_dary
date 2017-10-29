@@ -14,7 +14,7 @@ class Header extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="searcher">
+            <div className="searcher" style={{display: this.props.display}}>
               <form className="search">
                 <input type="text" placeholder="  Wyszukaj na stronie..." />
                 <input type="submit" value="Szukaj" onClick={this.props.searchProduct}/>
