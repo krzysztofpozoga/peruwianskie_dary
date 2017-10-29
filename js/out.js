@@ -8184,6 +8184,10 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _api = __webpack_require__(252);
+
+var _api2 = _interopRequireDefault(_api);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8195,53 +8199,77 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var SuszoneZiola = function (_React$Component) {
   _inherits(SuszoneZiola, _React$Component);
 
-  function SuszoneZiola() {
+  function SuszoneZiola(props) {
     _classCallCheck(this, SuszoneZiola);
 
-    return _possibleConstructorReturn(this, (SuszoneZiola.__proto__ || Object.getPrototypeOf(SuszoneZiola)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (SuszoneZiola.__proto__ || Object.getPrototypeOf(SuszoneZiola)).call(this, props));
+
+    _this.state = {
+      products: []
+    };
+    return _this;
   }
 
   _createClass(SuszoneZiola, [{
-    key: "render",
+    key: 'getProductData',
+    value: function getProductData() {
+      var _this2 = this;
+
+      _api2.default.then(function (data) {
+        _this2.setState({
+          products: data
+        });
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getProductData();
+    }
+  }, {
+    key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "listOfProducts" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
+      var products = this.state.products.map(function (elem) {
+        return _react2.default.createElement(
+          'div',
+          { key: elem.id, className: 'product' },
           _react2.default.createElement(
-            "div",
-            { className: "product" },
+            'h2',
+            null,
+            elem.name
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'flip-container' },
             _react2.default.createElement(
-              "h2",
-              null,
-              "!!!!"
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flip-container" },
+              'div',
+              { className: 'flipper' },
+              _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
               _react2.default.createElement(
-                "div",
-                { className: "flipper" },
-                _react2.default.createElement("div", { className: "product_front" }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "product_back" },
-                  "AAAAAAAAAAAAAAAA"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "a",
-              { target: "_blank" },
-              _react2.default.createElement(
-                "button",
-                null,
-                "Przejd\u017A do sklepu"
+                'div',
+                { className: 'product_back' },
+                elem.shortDescription
               )
             )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: elem.link, target: '_blank' },
+            _react2.default.createElement(
+              'button',
+              null,
+              'Przejd\u017A do sklepu'
+            )
           )
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'listOfProducts' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          products
         )
       );
     }
@@ -28195,6 +28223,25 @@ module.exports = function (str) {
 __webpack_require__(119);
 module.exports = __webpack_require__(118);
 
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function productsData() {
+  var link = 'https://www.peruwianskiedary.pl/categories/products';
+  return fetch(link).then(function (resp) {
+    return resp.json();
+  });
+}
+
+exports.default = productsData();
 
 /***/ })
 /******/ ]);
