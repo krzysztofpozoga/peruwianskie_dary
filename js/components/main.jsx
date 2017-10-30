@@ -5,6 +5,7 @@ import MainPage from './mainPage.jsx';
 import SuszoneZiola from './suszoneZiola.jsx';
 import Maka from './maka.jsx';
 import Ekstrakty from './ekstrakty.jsx';
+import SuperFoods from './superfoods.jsx';
 import AboutShop from './aboutShop.jsx';
 import Contact from './contact.jsx';
 import EachProduct from './eachProduct.jsx';
@@ -28,7 +29,10 @@ class Main extends React.Component {
             <IndexRoute component={Ekstrakty} />
             <Route path=":id" component={EachProduct} />
           </Route>
-          <Route path="/superfood" component={MainPage} />
+          <Route path="/superfoods" component={TemplateProduct} >
+            <IndexRoute component={SuperFoods} />
+            <Route path=":id" component={EachProduct} />
+          </Route>
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={AboutShop} />
         </Route>
