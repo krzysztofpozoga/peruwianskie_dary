@@ -1,5 +1,4 @@
 import React from 'react';
-import productsData from './api.jsx';
 
 class SuszoneZiola extends React.Component {
   constructor(props){
@@ -10,7 +9,9 @@ class SuszoneZiola extends React.Component {
   }
 
   getProductData(){
-    productsData
+    const link = 'https://www.peruwianskiedary.pl/categories/1/products';
+    fetch(link)
+    .then(resp => resp.json())
     .then(data => {
       this.setState({
         products: data
