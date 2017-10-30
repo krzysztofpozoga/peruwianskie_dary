@@ -1,4 +1,5 @@
 import React from 'react';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
 class SuszoneZiola extends React.Component {
   constructor(props){
@@ -23,11 +24,11 @@ class SuszoneZiola extends React.Component {
     this.getProductsData();
   }
   render(){
-    console.log(this.state.products);
     const products = this.state.products.map(elem => {
+      const product_path = `/suszone-ziola/${elem.id}`;
       return (
         <div key={elem.id} className="products">
-          <h2>{elem.name}<br /><p>(dowiedz się więcej)</p></h2>
+          <IndexLink to={product_path}><h2>{elem.name}<br /><p>(dowiedz się więcej)</p></h2></IndexLink>
           <div className="flip-container">
             <div className="flipper">
                <div className="product_front" style={{backgroundImage: `url(https://www.peruwianskiedary.pl${elem.imageUrl})`}}></div>
