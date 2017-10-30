@@ -3,6 +3,7 @@ import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-rou
 import Template from './template.jsx';
 import MainPage from './mainPage.jsx';
 import SuszoneZiola from './suszoneZiola.jsx';
+import Maka from './maka.jsx';
 import AboutShop from './aboutShop.jsx';
 import Contact from './contact.jsx';
 import EachProduct from './eachProduct.jsx';
@@ -18,7 +19,10 @@ class Main extends React.Component {
             <IndexRoute component={SuszoneZiola} />
             <Route path=":id" component={EachProduct} />
           </Route>
-          <Route path="/maka" component={MainPage} />
+          <Route path="/maka" component={TemplateProduct} >
+            <IndexRoute component={Maka} />
+            <Route path=":id" component={EachProduct} />
+          </Route>
           <Route path="/wyciagizziol" component={MainPage} />
           <Route path="/superfood" component={MainPage} />
           <Route path="/contact" component={Contact} />
