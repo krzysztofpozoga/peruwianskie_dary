@@ -8,7 +8,7 @@ class SuszoneZiola extends React.Component {
     }
   }
 
-  getProductData(){
+  getProductsData(){
     const link = 'https://www.peruwianskiedary.pl/categories/1/products';
     fetch(link)
     .then(resp => resp.json())
@@ -20,13 +20,13 @@ class SuszoneZiola extends React.Component {
   }
 
   componentDidMount(){
-    this.getProductData();
+    this.getProductsData();
   }
   render(){
     console.log(this.state.products);
     const products = this.state.products.map(elem => {
       return (
-        <div key={elem.id} className="product">
+        <div key={elem.id} className="products">
           <h2>{elem.name}<br /><p>(dowiedz się więcej)</p></h2>
           <div className="flip-container">
             <div className="flipper">

@@ -1,0 +1,182 @@
+.eachProduct {
+  // min-height: 100vh;
+  background-image: url(../images/backgroundTra.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    @media(min-width: 580px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    @media(min-width: 768px) {
+      width: 80%;
+    }
+  }
+}
+
+.product {
+  padding: 50px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/product_background_sample.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  h1 {
+    text-align: center;
+    min-width: 30vh;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .imageDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .productImage {
+      margin-bottom: 10px;
+      width: 200px;
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .productDescription {
+      text-align: center;
+      min-width: 200px;
+      min-height: 200px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 2px solid #00724A;
+      h2 {
+        background-color: #00724A;
+        border-radius: 5px;
+      }
+      div {
+        padding: 5px 0 5px 0;
+      }
+    }
+  }
+
+  .ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    h3 {
+      background-color: #00724A;
+      border-radius: 5px;
+      width: 100%;
+    }
+    div {
+      border: 2px solid #00724A;
+      padding: 5px 0 5px 0;
+    }
+  }
+
+  .preparation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    h3 {
+      background-color: #00724A;
+      border-radius: 5px;
+      width: 100%;
+    }
+    div {
+      border: 2px solid #00724A;
+      padding: 5px 0 5px 0;
+    }
+  }
+  .comentary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    h3 {
+      background-color: #00724A;
+      border-radius: 5px;
+      width: 100%;
+    }
+    div {
+      border: 2px solid #00724A;
+      padding: 5px 0 5px 0;
+    }
+
+  }
+  button {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    min-width: 30vh;
+    border-radius: 5px;
+    background-image: url(../images/buy_button_sample.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  @media(min-width: 580px) {
+    .imageDescription {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      .productImage {
+        margin-bottom: 10px;
+        width: 250px;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      .productDescription {
+        text-align: center;
+        width: 50%;
+        margin: 0 0;
+      }
+    }
+    .preparation {
+      display: block;
+      margin: 15px 0;
+      border: 1px solid black;
+      border-radius: 5px;
+      // background-color: rgba(255, 255, 255, 0.5);
+    }
+    .comentary {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media(min-width: 900px){
+    width: 80%;
+  }
+
+  @media(min-width: 1024px){
+    width: 60%;
+  }
+}
