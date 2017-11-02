@@ -28,7 +28,7 @@ class Maka extends React.Component {
       const product_path = `/maka/${elem.id}`;
       return (
         <div key={elem.id} className="products">
-          <IndexLink to={product_path}><h2>{elem.name}<br /><p>(dowiedz się więcej)</p></h2></IndexLink>
+          <IndexLink to={product_path}><h2>{elem.name}<br /><p>(kliknij i dowiedz się więcej)</p></h2></IndexLink>
           <div className="flip-container">
             <div className="flipper">
                <div className="product_front" style={{backgroundImage: `url(https://www.peruwianskiedary.pl${elem.imageUrl})`}}></div>

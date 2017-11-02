@@ -8470,7 +8470,7 @@ var Ekstrakty = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                '(dowiedz si\u0119 wi\u0119cej)'
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
             )
           ),
@@ -8675,7 +8675,7 @@ var Maka = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                '(dowiedz si\u0119 wi\u0119cej)'
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
             )
           ),
@@ -8800,7 +8800,7 @@ var SuperFoods = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                '(dowiedz si\u0119 wi\u0119cej)'
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
             )
           ),
@@ -8925,7 +8925,7 @@ var SuszoneZiola = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                '(dowiedz si\u0119 wi\u0119cej)'
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
             )
           ),
