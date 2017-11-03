@@ -7,7 +7,7 @@ class Footer extends React.Component {
         <div className="container">
           <div className="contact">
             <span>Copyright © 2017. peruwianskiedary.pl</span>
-            <span>example@gmail.com</span>
+            <span>odnowa.jedzeniowa@gmail.com</span>
           </div>
         </div>
       </footer>

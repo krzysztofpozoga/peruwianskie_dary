@@ -15156,7 +15156,7 @@ var Footer = function (_React$Component) {
             _react2.default.createElement(
               "span",
               null,
-              "example@gmail.com"
+              "odnowa.jedzeniowa@gmail.com"
             )
           )
         )
