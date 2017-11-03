@@ -28,13 +28,15 @@ class Ekstrakty extends React.Component {
       const product_path = `/ekstrakty/${elem.id}`;
       return (
         <div key={elem.id} className="products">
-          <IndexLink to={product_path}><h2>{elem.name}<br /><p>(kliknij i dowiedz się więcej)</p></h2></IndexLink>
-          <div className="flip-container">
-            <div className="flipper">
-               <div className="product_front" style={{backgroundImage: `url(https://www.peruwianskiedary.pl${elem.imageUrl})`}}></div>
-               <div className="product_back">{elem.shortDescription}</div>
-             </div>
-          </div>
+          <IndexLink to={product_path}>
+            <h2>{elem.name}<br /><p>(kliknij i dowiedz się więcej)</p></h2>
+            <div className="flip-container">
+              <div className="flipper">
+                 <div className="product_front" style={{backgroundImage: `url(https://www.peruwianskiedary.pl${elem.imageUrl})`}}></div>
+                 <div className="product_back">{elem.shortDescription}</div>
+               </div>
+            </div>
+          </IndexLink>
           <a href={elem.link} target="_blank">
             <button>Przejdź do sklepu</button>
           </a>

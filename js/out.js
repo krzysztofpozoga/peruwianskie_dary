@@ -8472,19 +8472,19 @@ var Ekstrakty = function (_React$Component) {
                 null,
                 '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flip-container' },
+            ),
             _react2.default.createElement(
               'div',
-              { className: 'flipper' },
-              _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+              { className: 'flip-container' },
               _react2.default.createElement(
                 'div',
-                { className: 'product_back' },
-                elem.shortDescription
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
               )
             )
           ),
@@ -8677,19 +8677,19 @@ var Maka = function (_React$Component) {
                 null,
                 '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flip-container' },
+            ),
             _react2.default.createElement(
               'div',
-              { className: 'flipper' },
-              _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+              { className: 'flip-container' },
               _react2.default.createElement(
                 'div',
-                { className: 'product_back' },
-                elem.shortDescription
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
               )
             )
           ),
@@ -8802,19 +8802,19 @@ var SuperFoods = function (_React$Component) {
                 null,
                 '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flip-container' },
+            ),
             _react2.default.createElement(
               'div',
-              { className: 'flipper' },
-              _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+              { className: 'flip-container' },
               _react2.default.createElement(
                 'div',
-                { className: 'product_back' },
-                elem.shortDescription
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
               )
             )
           ),
@@ -8927,19 +8927,19 @@ var SuszoneZiola = function (_React$Component) {
                 null,
                 '(kliknij i dowiedz si\u0119 wi\u0119cej)'
               )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flip-container' },
+            ),
             _react2.default.createElement(
               'div',
-              { className: 'flipper' },
-              _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+              { className: 'flip-container' },
               _react2.default.createElement(
                 'div',
-                { className: 'product_back' },
-                elem.shortDescription
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
               )
             )
           ),
