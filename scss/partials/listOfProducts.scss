@@ -26,7 +26,6 @@
   width: 250px;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   background-image: url(../images/product_background_sample.png);
   background-position: center;
   background-size: 100% 100%;
@@ -35,6 +34,9 @@
   a {
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h2 {
@@ -42,7 +44,8 @@
     text-align: center;
     min-width: 30vh;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px 15px 10px 15px;
+    text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
     p {
       font-size: 0.6em;
     }
