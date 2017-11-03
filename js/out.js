@@ -15005,7 +15005,6 @@ var EachProduct = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-
       var eachProduct = _react2.default.createElement(
         "div",
         { className: "product" },
@@ -15072,7 +15071,7 @@ var EachProduct = function (_React$Component) {
           _react2.default.createElement(
             "div",
             null,
-            this.state.product.comments
+            this.state.product.comments !== null ? this.state.product.comments : 'Brak komentarza'
           )
         ),
         _react2.default.createElement(

@@ -24,7 +24,6 @@ class EachProduct extends React.Component {
   }
 
   render(){
-
     const eachProduct = (
       <div className="product">
         <h1>{this.state.product.name}</h1>
@@ -45,7 +44,8 @@ class EachProduct extends React.Component {
         </div>
         <div className="comentary">
           <h3>Krótki komentarz</h3>
-          <div>{this.state.product.comments}</div>
+          <div>{this.state.product.comments !== null ? this.state.product.comments : 'Brak komentarza'}
+          </div>
         </div>
         <a href={this.state.product.link} target="_blank">
           <button>Przejdź do sklepu</button>
