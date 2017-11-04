@@ -1,4 +1,5 @@
 import React from 'react';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
 class Header extends React.Component {
   constructor(props){
@@ -16,8 +17,8 @@ class Header extends React.Component {
           <div className="row">
             <div className="searcher" style={{display: this.props.display}}>
               <form className="search">
-                <input type="text" placeholder="  Wyszukaj na stronie..." />
-                <input type="submit" value="Szukaj" onClick={this.props.searchProduct}/>
+                <input  id='searchText' type="text" placeholder="  Wyszukaj na stronie..." onChange={this.props.getText}/>
+                <IndexLink to="/search"><input type="submit" value="Szukaj"/></IndexLink>
               </form>
             </div>
           </div>

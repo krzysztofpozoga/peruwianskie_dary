@@ -8,6 +8,7 @@ import SuszoneZiola from './suszoneZiola.jsx';
 import Maka from './maka.jsx';
 import Ekstrakty from './ekstrakty.jsx';
 import SuperFoods from './superfoods.jsx';
+import SearchedProducts from './searchedProducts.jsx';
 import AboutShop from './aboutShop.jsx';
 import Contact from './contact.jsx';
 
@@ -18,10 +19,6 @@ class Template extends React.Component {
       menuDisplay: '',
       searcherDisplay: ''
     }
-  }
-  searchProduct = (event) => {
-    event.preventDefault();
-    console.log('AAAA');
   }
 
   showAndHideMenu = (event) => {
@@ -52,7 +49,7 @@ class Template extends React.Component {
     return (
       <div>
         <div id="all">
-          <Header searchProduct={this.searchProduct} display={this.state.searcherDisplay}/>
+          <Header display={this.state.searcherDisplay}/>
           <Icons showAndHideMenu={this.showAndHideMenu} showAndHideSearcher={this.showAndHideSearcher}/>
           <Nav display={this.state.menuDisplay}/>
           <div className="content">{this.props.children}</div>
