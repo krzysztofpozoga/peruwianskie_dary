@@ -19,19 +19,21 @@
       background-size: 100% 100%;
       background-repeat: no-repeat;
       h2 {
-        margin: 20px;
+        margin: 20px 20px 10px 20px;
         font-size: 2em;
         text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
       }
       .info {
         margin: 0 0 15px 0;
         padding: 10px;
+        display: flex;
         .left {
           display: none;
         }
         .right {
           display: flex;
           flex-direction: column;
+          justify-content: space-between;
           div {
             margin: 0;
             width: 100%;
@@ -52,6 +54,34 @@
       .data {
         background-image: url(../images/product_background_sample_copy.png);
         width: 80%;
+        .info {
+          width: 80%;
+          .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+            img {
+              width: 48px;
+              height: 48px;
+              background-color: rgba(255, 255, 255, 0.7);
+              border-radius: 15px;
+              margin-right: 5px;
+            }
+            .tel {
+              margin-top: 55px;
+            }
+          }
+          .right {
+            width: 80%;
+          }
+        }
+      }
+    }
+    @media(min-width: 900px){
+      .data {
+        width: 50%;
       }
     }
   }

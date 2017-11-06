@@ -8366,10 +8366,17 @@ var Contact = function (_React$Component) {
             _react2.default.createElement(
               "div",
               { className: "info" },
-              _react2.default.createElement("div", { className: "left" }),
+              _react2.default.createElement(
+                "div",
+                { className: "left" },
+                _react2.default.createElement("img", { className: "icon home", src: "images/home.jpg" }),
+                _react2.default.createElement("img", { className: "icon tel", src: "images/tel.jpg" }),
+                _react2.default.createElement("img", { className: "icon email", src: "images/email.jpg" })
+              ),
               _react2.default.createElement(
                 "div",
                 { className: "right" },
+                _react2.default.createElement("hr", null),
                 _react2.default.createElement(
                   "div",
                   null,
@@ -8395,6 +8402,7 @@ var Contact = function (_React$Component) {
                   null,
                   "\u010CESKA REPUBLIKA"
                 ),
+                _react2.default.createElement("hr", null),
                 _react2.default.createElement(
                   "div",
                   null,
@@ -8410,6 +8418,7 @@ var Contact = function (_React$Component) {
                   null,
                   "PL - 783 777 080"
                 ),
+                _react2.default.createElement("hr", null),
                 _react2.default.createElement(
                   "div",
                   null,
