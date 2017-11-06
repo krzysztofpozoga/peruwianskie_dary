@@ -8365,56 +8365,61 @@ var Contact = function (_React$Component) {
             ),
             _react2.default.createElement(
               "div",
-              null,
+              { className: "info" },
+              _react2.default.createElement("div", { className: "left" }),
               _react2.default.createElement(
                 "div",
-                null,
-                "Adres:"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "UNCARIA \u010CR, s.r.o"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "Smetanova 3"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "466 01 JABLONEC n/NISOU"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "\u010CESKA REPUBLIKA"
-              ),
-              _react2.default.createElement(
-                "div",
-                null,
-                "Telefon:"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "Uncaria \u010CR - 00 420 483 330 600"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "PL - 783 777 080"
-              ),
-              _react2.default.createElement(
-                "div",
-                null,
-                "E-mail:"
-              ),
-              _react2.default.createElement(
-                "p",
-                null,
-                "odnowa.jedzeniowa@gmail.com"
+                { className: "right" },
+                _react2.default.createElement(
+                  "div",
+                  null,
+                  "Adres:"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "UNCARIA \u010CR, s.r.o"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Smetanova 3"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "466 01 JABLONEC n/NISOU"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "\u010CESKA REPUBLIKA"
+                ),
+                _react2.default.createElement(
+                  "div",
+                  null,
+                  "Telefon:"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Uncaria \u010CR - 00 420 483 330 600"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "PL - 783 777 080"
+                ),
+                _react2.default.createElement(
+                  "div",
+                  null,
+                  "E-mail:"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "odnowa.jedzeniowa@gmail.com"
+                )
               )
             )
           )
