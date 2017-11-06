@@ -8582,7 +8582,7 @@ var MainPage = function (_React$Component) {
               _react2.default.createElement(
                 "p",
                 null,
-                "Po klikni\u0119ciu na ikonk\u0119 kup teraz zostaniesz przekierowany na stron\u0119 sklepu czeskiej firmy Uncaria CR, z kt\xF3r\u0105 wsp\xF3\u0142pracuj\u0119 przy propagowaniu kultury i wytwor\xF3w potomk\xF3w Ink\xF3w oraz lud\xF3w Amazonii. W sklepie znajdziesz mi\u0119dzy innymi unikalne m\u0105czki z canihua, peruwia\u0144skiego bobu czy kiwicha, najlepszej jako\u015Bci olej sacha inchi, suszony sok z trzciny cukrowej oraz przepyszne algarrobo."
+                "Po klikni\u0119ciu na ikonk\u0119 kup teraz zostaniesz przekierowany na stron\u0119 sklepu czeskiej firmy Uncaria CR, z kt\xF3r\u0105 wsp\xF3\u0142pracuj\u0119 przy propagowaniu kultury i wytwor\xF3w potomk\xF3w Ink\xF3w oraz lud\xF3w Amazonii. Kupuj\u0105c wpisz kod \u201Emedea\u201D a dostaniesz rabat. W sklepie znajdziesz mi\u0119dzy innymi unikalne m\u0105czki z canihua, peruwia\u0144skiego bobu czy kiwicha, najlepszej jako\u015Bci olej sacha inchi, suszony sok z trzciny cukrowej oraz przepyszne algarrobo."
               )
             )
           )
