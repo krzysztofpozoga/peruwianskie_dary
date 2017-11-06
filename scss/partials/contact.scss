@@ -22,12 +22,18 @@
       background-size: 100% 100%;
       background-repeat: no-repeat;
       h2 {
-        margin: 20px;
+        margin: 15px;
         font-size: 2em;
         text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
       }
       div {
         margin: 10px;
+        div {
+          margin: 0;
+          width: 100%;
+          font-size: 1.2em;
+          font-weight: bolder;
+        }
         p {
           margin-bottom: 5px;
           text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;

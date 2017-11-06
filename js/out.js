@@ -8367,6 +8367,11 @@ var Contact = function (_React$Component) {
               "div",
               null,
               _react2.default.createElement(
+                "div",
+                null,
+                "Adres:"
+              ),
+              _react2.default.createElement(
                 "p",
                 null,
                 "UNCARIA \u010CR, s.r.o"
@@ -8387,6 +8392,11 @@ var Contact = function (_React$Component) {
                 "\u010CESKA REPUBLIKA"
               ),
               _react2.default.createElement(
+                "div",
+                null,
+                "Telefon:"
+              ),
+              _react2.default.createElement(
                 "p",
                 null,
                 "Uncaria \u010CR - 00 420 483 330 600"
@@ -8395,6 +8405,16 @@ var Contact = function (_React$Component) {
                 "p",
                 null,
                 "PL - 783 777 080"
+              ),
+              _react2.default.createElement(
+                "div",
+                null,
+                "E-mail:"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "odnowa.jedzeniowa@gmail.com"
               )
             )
           )
