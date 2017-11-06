@@ -8357,32 +8357,45 @@ var Contact = function (_React$Component) {
           { className: "container" },
           _react2.default.createElement(
             "div",
-            null,
+            { className: "data" },
             _react2.default.createElement(
               "h2",
               null,
               "Kontakt"
             ),
             _react2.default.createElement(
-              "p",
+              "div",
               null,
-              "UNCARIA \u010CR, s.r.o ",
-              _react2.default.createElement("br", null),
-              "Smetanova 3",
-              _react2.default.createElement("br", null),
-              " 466 01 JABLONEC n/NISOU",
-              _react2.default.createElement("br", null),
-              " \u010CESKA REPUBLIKA"
-            ),
-            _react2.default.createElement(
-              "p",
-              null,
-              "Uncaria \u010CR - 00 420 483 330 600"
-            ),
-            _react2.default.createElement(
-              "p",
-              null,
-              "PL - 783 777 080"
+              _react2.default.createElement(
+                "p",
+                null,
+                "UNCARIA \u010CR, s.r.o"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "Smetanova 3"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "466 01 JABLONEC n/NISOU"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "\u010CESKA REPUBLIKA"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "Uncaria \u010CR - 00 420 483 330 600"
+              ),
+              _react2.default.createElement(
+                "p",
+                null,
+                "PL - 783 777 080"
+              )
             )
           )
         )

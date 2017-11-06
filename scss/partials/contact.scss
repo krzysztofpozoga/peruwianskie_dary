@@ -8,24 +8,33 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    div {
+    .data {
       margin: 10px 0px;
       padding: 10px;
       display: flex;
-      min-height: 400px;
-      width: 250px;
+      min-height: 300px;
+      width: 300px;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
+      align-items: center;
       background-image: url(../images/product_background_sample.png);
       background-position: center;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       h2 {
+        margin: 20px;
         font-size: 2em;
-        color: #00724A;
-        text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+        text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
       }
-
+      div {
+        margin: 10px;
+        p {
+          margin-bottom: 5px;
+          text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+          text-align: justify;
+          font-size: 1.2em;
+        }
+      }
     }
     @media(min-width: 768px) {
       width: 80%;
