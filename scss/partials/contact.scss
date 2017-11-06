@@ -8,6 +8,25 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    div {
+      margin: 10px 0px;
+      padding: 10px;
+      display: flex;
+      min-height: 400px;
+      width: 250px;
+      flex-direction: column;
+      justify-content: center;
+      background-image: url(../images/product_background_sample.png);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      h2 {
+        font-size: 2em;
+        color: #00724A;
+        text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+      }
+
+    }
     @media(min-width: 768px) {
       width: 80%;
     }
