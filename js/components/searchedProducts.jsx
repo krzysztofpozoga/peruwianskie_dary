@@ -10,20 +10,15 @@ class SearchedProducts extends React.Component {
   }
 
   getProductsData(){
-    let searchButton = document.getElementById('searchButton');
-    searchButton.addEventListener('click', ()=> {
-      let searchedText = document.getElementById('searchText').value;
-      const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${searchedText}`;
-      fetch(link)
-      .then(resp => resp.json())
-      .then(data => {
-        this.setState({
-          products: data
-        })
+    let searchedText = document.getElementById('searchText').value;
+    const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${searchedText}`;
+    fetch(link)
+    .then(resp => resp.json())
+    .then(data => {
+      this.setState({
+        products: data
       })
     })
-
-
   }
 
   componentDidMount(){
