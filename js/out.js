@@ -8818,13 +8818,16 @@ var SearchedProducts = function (_React$Component) {
     value: function getProductsData() {
       var _this2 = this;
 
-      var searchedText = document.getElementById('searchText').value;
-      var link = 'https://www.peruwianskiedary.pl/categories/products/search?phrase=' + searchedText;
-      fetch(link).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          products: data
+      var searchButton = document.getElementById('searchButton');
+      searchButton.addEventListener('click', function () {
+        var searchedText = document.getElementById('searchText').value;
+        var link = 'https://www.peruwianskiedary.pl/categories/products/search?phrase=' + searchedText;
+        fetch(link).then(function (resp) {
+          return resp.json();
+        }).then(function (data) {
+          _this2.setState({
+            products: data
+          });
         });
       });
     }
@@ -15420,7 +15423,7 @@ var Header = function (_React$Component) {
                 _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie...", onChange: this.props.getText }),
                 _react2.default.createElement(
                   _reactRouter.IndexLink,
-                  { to: "/search" },
+                  { id: "searchButton", to: "/search" },
                   _react2.default.createElement("input", { type: "submit", value: "Szukaj" })
                 )
               )
@@ -15569,6 +15572,10 @@ var _contact = __webpack_require__(73);
 
 var _contact2 = _interopRequireDefault(_contact);
 
+var _notFound = __webpack_require__(260);
+
+var _notFound2 = _interopRequireDefault(_notFound);
+
 var _eachProduct = __webpack_require__(126);
 
 var _eachProduct2 = _interopRequireDefault(_eachProduct);
@@ -15635,7 +15642,8 @@ var Main = function (_React$Component) {
             _react2.default.createElement(_reactRouter.Route, { path: ':id', component: _eachProduct2.default })
           ),
           _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _aboutShop2.default })
+          _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _aboutShop2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/*', component: _notFound2.default })
         )
       );
     }
@@ -15828,6 +15836,10 @@ var _aboutShop2 = _interopRequireDefault(_aboutShop);
 var _contact = __webpack_require__(73);
 
 var _contact2 = _interopRequireDefault(_contact);
+
+var _notFound = __webpack_require__(260);
+
+var _notFound2 = _interopRequireDefault(_notFound);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29297,6 +29309,71 @@ module.exports = function (str) {
 __webpack_require__(125);
 module.exports = __webpack_require__(124);
 
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(20);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NotFound = function (_React$Component) {
+  _inherits(NotFound, _React$Component);
+
+  function NotFound() {
+    _classCallCheck(this, NotFound);
+
+    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
+  }
+
+  _createClass(NotFound, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "notFound" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "h1",
+            null,
+            "Uuuups! 404"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Co\u015B posz\u0142o nie tak :("
+          )
+        )
+      );
+    }
+  }]);
+
+  return NotFound;
+}(_react2.default.Component);
+
+exports.default = NotFound;
 
 /***/ })
 /******/ ]);

@@ -11,6 +11,7 @@ import SuperFoods from './superfoods.jsx';
 import SearchedProducts from './searchedProducts.jsx';
 import AboutShop from './aboutShop.jsx';
 import Contact from './contact.jsx';
+import NotFound from './notFound.jsx';
 
 class Template extends React.Component {
   constructor(props){

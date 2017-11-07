@@ -9,6 +9,7 @@ import SuperFoods from './superfoods.jsx';
 import SearchedProducts from './searchedProducts.jsx';
 import AboutShop from './aboutShop.jsx';
 import Contact from './contact.jsx';
+import NotFound from './notFound.jsx';
 import EachProduct from './eachProduct.jsx';
 import TemplateProduct from './templateProduct.jsx';
 
@@ -40,6 +41,7 @@ class Main extends React.Component {
           </Route>
           <Route path="/contact" component={Contact} />
           <Route path="/about" component={AboutShop} />
+          <Route path="/*" component={NotFound} />
         </Route>
       </Router>
     )
