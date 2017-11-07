@@ -8834,6 +8834,11 @@ var SearchedProducts = function (_React$Component) {
       this.getProductsData();
     }
   }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      this.getProductsData();
+    }
+  }, {
     key: 'render',
     value: function render() {
       var products = this.state.products.map(function (elem) {

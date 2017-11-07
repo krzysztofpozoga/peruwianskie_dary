@@ -24,6 +24,10 @@ class SearchedProducts extends React.Component {
   componentDidMount(){
     this.getProductsData();
   }
+
+  componentDidUpdate(){
+    this.getProductsData();
+  }
   render(){
     const products = this.state.products.map(elem => {
       const product_path = `/search/${elem.id}`;
