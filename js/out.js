@@ -15943,9 +15943,16 @@ var Template = function (_React$Component) {
       }
     };
 
+    _this.getText = function (event) {
+      _this.setState({
+        searchText: event.target.value
+      });
+    };
+
     _this.state = {
       menuDisplay: '',
-      searcherDisplay: ''
+      searcherDisplay: '',
+      searchText: ''
     };
     return _this;
   }

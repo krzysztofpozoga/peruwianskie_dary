@@ -18,7 +18,8 @@ class Template extends React.Component {
     super(props);
     this.state = {
       menuDisplay: '',
-      searcherDisplay: ''
+      searcherDisplay: '',
+      searchText: ''
     }
   }
 
@@ -44,6 +45,12 @@ class Template extends React.Component {
         searcherDisplay: ''
       })
     }
+  }
+
+  getText = (event) => {
+      this.setState({
+          searchText: event.target.value
+      })
   }
 
   render(){
