@@ -15947,8 +15947,8 @@ var Template = function (_React$Component) {
 
     _this.searchProduct = function (event) {
       event.preventDefault();
-      var searchedText = _this.state.searchText;
-      console.log(searchedText);
+      // let searchedText = this.state.searchText;
+      // console.log(searchedText);
     };
 
     _this.state = {
@@ -15962,6 +15962,11 @@ var Template = function (_React$Component) {
   _createClass(Template, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var childWithProp = _react2.default.Children.map(this.props.children, function (child) {
+        return _react2.default.cloneElement(child, { searchText: _this2.state.searchText });
+      });
       return _react2.default.createElement(
         'div',
         null,
@@ -15974,7 +15979,7 @@ var Template = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'content' },
-            this.props.children
+            childWithProp
           ),
           _react2.default.createElement(_footer2.default, null)
         )
@@ -16015,19 +16020,24 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var TemplateProduct = function (_React$Component) {
   _inherits(TemplateProduct, _React$Component);
 
-  function TemplateProduct() {
+  function TemplateProduct(props) {
     _classCallCheck(this, TemplateProduct);
 
-    return _possibleConstructorReturn(this, (TemplateProduct.__proto__ || Object.getPrototypeOf(TemplateProduct)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TemplateProduct.__proto__ || Object.getPrototypeOf(TemplateProduct)).call(this, props));
   }
 
   _createClass(TemplateProduct, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var childWithProp = _react2.default.Children.map(this.props.children, function (child) {
+        return _react2.default.cloneElement(child, { searchText: _this2.props.searchText });
+      });
       return _react2.default.createElement(
         'div',
         null,
-        this.props.children
+        childWithProp
       );
     }
   }]);
