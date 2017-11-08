@@ -17,8 +17,8 @@ class Header extends React.Component {
           <div className="row">
             <div className="searcher" style={{display: this.props.display}}>
               <form className="search">
-                <input  id='searchText' type="text" placeholder="  Wyszukaj na stronie..."/>
-                <IndexLink to="/search"><input type="submit" value="Szukaj"/></IndexLink>
+                <input  id='searchText' type="text" placeholder="  Wyszukaj na stronie..." onChange={this.props.getText}/>
+                <IndexLink to="/search"><input type="submit" value="Szukaj" onClick={this.props.searchProduct} /></IndexLink>
               </form>
             </div>
           </div>

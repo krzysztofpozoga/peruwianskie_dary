@@ -8878,85 +8878,81 @@ var SearchedProducts = function (_React$Component) {
     return _this;
   }
 
-  _createClass(SearchedProducts, [{
-    key: 'getProductsData',
-    value: function getProductsData() {
-      var _this2 = this;
+  // getProductsData(){
+  //   let searchedText = document.getElementById('searchText').value;
+  //   const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${searchedText}`;
+  //   fetch(link)
+  //   .then(resp => resp.json())
+  //   .then(data => {
+  //     this.setState({
+  //       products: data
+  //     })
+  //   })
+  // }
+  //
+  // componentDidMount(){
+  //   this.getProductsData();
+  // }
+  //
+  // componentDidUpdate(){
+  //   this.getProductsData();
+  // }
 
-      var searchedText = document.getElementById('searchText').value;
-      var link = 'https://www.peruwianskiedary.pl/categories/products/search?phrase=' + searchedText;
-      fetch(link).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          products: data
-        });
-      });
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getProductsData();
-    }
-  }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate() {
-      this.getProductsData();
-    }
-  }, {
-    key: 'render',
+
+  _createClass(SearchedProducts, [{
+    key: "render",
     value: function render() {
       var products = this.state.products.map(function (elem) {
-        var product_path = '/search/' + elem.id;
+        var product_path = "/search/" + elem.id;
         return _react2.default.createElement(
-          'div',
-          { key: elem.id, className: 'products' },
+          "div",
+          { key: elem.id, className: "products" },
           _react2.default.createElement(
             _reactRouter.IndexLink,
             { to: product_path },
             _react2.default.createElement(
-              'h2',
+              "h2",
               null,
               elem.name,
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
+                "(kliknij i dowiedz si\u0119 wi\u0119cej)"
               )
             ),
             _react2.default.createElement(
-              'div',
-              { className: 'flip-container' },
+              "div",
+              { className: "flip-container" },
               _react2.default.createElement(
-                'div',
-                { className: 'flipper' },
-                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                "div",
+                { className: "flipper" },
+                _react2.default.createElement("div", { className: "product_front", style: { backgroundImage: "url(https://www.peruwianskiedary.pl" + elem.imageUrl + ")" } }),
                 _react2.default.createElement(
-                  'div',
-                  { className: 'product_back' },
+                  "div",
+                  { className: "product_back" },
                   elem.shortDescription
                 )
               )
             )
           ),
           _react2.default.createElement(
-            'a',
-            { href: elem.link, target: '_blank' },
+            "a",
+            { href: elem.link, target: "_blank" },
             _react2.default.createElement(
-              'button',
+              "button",
               null,
-              'Przejd\u017A do sklepu'
+              "Przejd\u017A do sklepu"
             )
           )
         );
       });
       return _react2.default.createElement(
-        'div',
-        { className: 'listOfProducts' },
+        "div",
+        { className: "listOfProducts" },
         _react2.default.createElement(
-          'div',
-          { className: 'container' },
+          "div",
+          { className: "container" },
           products
         )
       );
@@ -15482,11 +15478,11 @@ var Header = function (_React$Component) {
               _react2.default.createElement(
                 "form",
                 { className: "search" },
-                _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie..." }),
+                _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie...", onChange: this.props.getText }),
                 _react2.default.createElement(
                   _reactRouter.IndexLink,
                   { to: "/search" },
-                  _react2.default.createElement("input", { type: "submit", value: "Szukaj" })
+                  _react2.default.createElement("input", { type: "submit", value: "Szukaj", onClick: this.props.searchProduct })
                 )
               )
             )
@@ -15949,6 +15945,12 @@ var Template = function (_React$Component) {
       });
     };
 
+    _this.searchProduct = function (event) {
+      event.preventDefault();
+      var searchedText = _this.state.searchText;
+      console.log(searchedText);
+    };
+
     _this.state = {
       menuDisplay: '',
       searcherDisplay: '',
@@ -15966,7 +15968,7 @@ var Template = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { id: 'all' },
-          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay }),
+          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.getText, searchProduct: this.searchProduct }),
           _react2.default.createElement(_icons2.default, { showAndHideMenu: this.showAndHideMenu, showAndHideSearcher: this.showAndHideSearcher }),
           _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay }),
           _react2.default.createElement(
