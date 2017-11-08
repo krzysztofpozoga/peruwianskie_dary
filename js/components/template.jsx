@@ -19,7 +19,8 @@ class Template extends React.Component {
     this.state = {
       menuDisplay: '',
       searcherDisplay: '',
-      searchText: ''
+      searchText: '',
+      searchedLink: ''
     }
   }
 
@@ -48,28 +49,19 @@ class Template extends React.Component {
   }
 
   getText = (event) => {
-      this.setState({
-          searchText: event.target.value
-      })
-  }
-
-  searchProduct = (event) => {
-    event.preventDefault();
-    // let searchedText = this.state.searchText;
-    // console.log(searchedText);
+    this.setState({
+        searchText: event.target.value
+    })
   }
 
   render(){
-    const childWithProp = React.Children.map(this.props.children, (child) => {
-      return React.cloneElement(child, {searchText: this.state.searchText});
-      });
     return (
       <div>
         <div id="all">
-          <Header display={this.state.searcherDisplay} getText={this.getText} searchProduct={this.searchProduct}/>
+          <Header display={this.state.searcherDisplay} getText={this.getText} link={this.state.searchText}/>
           <Icons showAndHideMenu={this.showAndHideMenu} showAndHideSearcher={this.showAndHideSearcher}/>
           <Nav display={this.state.menuDisplay}/>
-          <div className="content">{childWithProp}</div>
+          <div className="content">{this.props.children}</div>
           <Footer />
         </div>
       </div>

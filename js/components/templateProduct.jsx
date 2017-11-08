@@ -5,12 +5,9 @@ class TemplateProduct extends React.Component {
     super(props);
   }
   render(){
-    const childWithProp = React.Children.map(this.props.children, (child) => {
-      return React.cloneElement(child, {searchText: this.props.searchText});
-      });
     return (
       <div>
-        {childWithProp}
+        {this.props.children}
       </div>
     )
   }

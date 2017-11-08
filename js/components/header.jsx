@@ -6,6 +6,7 @@ class Header extends React.Component {
     super(props);
   }
   render(){
+    let path = this.props.link
     return (
       <header>
         <div className="container">
@@ -18,7 +19,7 @@ class Header extends React.Component {
             <div className="searcher" style={{display: this.props.display}}>
               <form className="search">
                 <input  id='searchText' type="text" placeholder="  Wyszukaj na stronie..." onChange={this.props.getText}/>
-                <IndexLink to="/search"><input type="submit" value="Szukaj" onClick={this.props.searchProduct} /></IndexLink>
+                <IndexLink to={path}><input type="submit" value="Szukaj"/></IndexLink>
               </form>
             </div>
           </div>

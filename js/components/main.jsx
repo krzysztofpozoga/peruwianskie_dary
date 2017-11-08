@@ -35,7 +35,7 @@ class Main extends React.Component {
             <IndexRoute component={SuperFoods} />
             <Route path=":id" component={EachProduct} />
           </Route>
-          <Route path="/search" component={TemplateProduct} >
+          <Route path=":path" component={TemplateProduct} >
             <IndexRoute component={SearchedProducts} />
             <Route path=":id" component={EachProduct} />
           </Route>

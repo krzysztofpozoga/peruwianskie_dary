@@ -8878,28 +8878,31 @@ var SearchedProducts = function (_React$Component) {
     return _this;
   }
 
-  // getProductsData(){
-  //   let searchedText = document.getElementById('searchText').value;
-  //   const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${searchedText}`;
-  //   fetch(link)
-  //   .then(resp => resp.json())
-  //   .then(data => {
-  //     this.setState({
-  //       products: data
-  //     })
-  //   })
-  // }
-  //
-  // componentDidMount(){
-  //   this.getProductsData();
-  // }
-  //
-  // componentDidUpdate(){
-  //   this.getProductsData();
-  // }
-
-
   _createClass(SearchedProducts, [{
+    key: "getProductsData",
+    value: function getProductsData() {
+      var _this2 = this;
+
+      var link = "https://www.peruwianskiedary.pl/categories/products/search?phrase=" + this.props.params.path;
+      fetch(link).then(function (resp) {
+        return resp.json();
+      }).then(function (data) {
+        _this2.setState({
+          products: data
+        });
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.getProductsData();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      this.getProductsData();
+    }
+  }, {
     key: "render",
     value: function render() {
       var products = this.state.products.map(function (elem) {
@@ -15450,6 +15453,7 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      var path = this.props.link;
       return _react2.default.createElement(
         "header",
         null,
@@ -15481,8 +15485,8 @@ var Header = function (_React$Component) {
                 _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie...", onChange: this.props.getText }),
                 _react2.default.createElement(
                   _reactRouter.IndexLink,
-                  { to: "/search" },
-                  _react2.default.createElement("input", { type: "submit", value: "Szukaj", onClick: this.props.searchProduct })
+                  { to: path },
+                  _react2.default.createElement("input", { type: "submit", value: "Szukaj" })
                 )
               )
             )
@@ -15695,7 +15699,7 @@ var Main = function (_React$Component) {
           ),
           _react2.default.createElement(
             _reactRouter.Route,
-            { path: '/search', component: _templateProduct2.default },
+            { path: ':path', component: _templateProduct2.default },
             _react2.default.createElement(_reactRouter.IndexRoute, { component: _searchedProducts2.default }),
             _react2.default.createElement(_reactRouter.Route, { path: ':id', component: _eachProduct2.default })
           ),
@@ -15945,16 +15949,11 @@ var Template = function (_React$Component) {
       });
     };
 
-    _this.searchProduct = function (event) {
-      event.preventDefault();
-      // let searchedText = this.state.searchText;
-      // console.log(searchedText);
-    };
-
     _this.state = {
       menuDisplay: '',
       searcherDisplay: '',
-      searchText: ''
+      searchText: '',
+      searchedLink: ''
     };
     return _this;
   }
@@ -15962,24 +15961,19 @@ var Template = function (_React$Component) {
   _createClass(Template, [{
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
-      var childWithProp = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { searchText: _this2.state.searchText });
-      });
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
           'div',
           { id: 'all' },
-          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.getText, searchProduct: this.searchProduct }),
+          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.getText, link: this.state.searchText }),
           _react2.default.createElement(_icons2.default, { showAndHideMenu: this.showAndHideMenu, showAndHideSearcher: this.showAndHideSearcher }),
           _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay }),
           _react2.default.createElement(
             'div',
             { className: 'content' },
-            childWithProp
+            this.props.children
           ),
           _react2.default.createElement(_footer2.default, null)
         )
@@ -16029,15 +16023,10 @@ var TemplateProduct = function (_React$Component) {
   _createClass(TemplateProduct, [{
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
-      var childWithProp = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { searchText: _this2.props.searchText });
-      });
       return _react2.default.createElement(
         'div',
         null,
-        childWithProp
+        this.props.children
       );
     }
   }]);

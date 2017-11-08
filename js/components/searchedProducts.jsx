@@ -9,25 +9,25 @@ class SearchedProducts extends React.Component {
     }
   }
 
-  // getProductsData(){
-  //   let searchedText = document.getElementById('searchText').value;
-  //   const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${searchedText}`;
-  //   fetch(link)
-  //   .then(resp => resp.json())
-  //   .then(data => {
-  //     this.setState({
-  //       products: data
-  //     })
-  //   })
-  // }
-  //
-  // componentDidMount(){
-  //   this.getProductsData();
-  // }
-  //
-  // componentDidUpdate(){
-  //   this.getProductsData();
-  // }
+  getProductsData(){
+    const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${this.props.params.path}`;
+    fetch(link)
+    .then(resp => resp.json())
+    .then(data => {
+      this.setState({
+        products: data
+      })
+    })
+  }
+
+  componentDidMount(){
+    this.getProductsData();
+  }
+
+  componentDidUpdate(){
+    this.getProductsData();
+  }
+
   render(){
     const products = this.state.products.map(elem => {
       const product_path = `/search/${elem.id}`;
