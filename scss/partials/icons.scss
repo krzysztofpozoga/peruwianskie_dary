@@ -73,6 +73,9 @@
         border-radius: 15px;
         margin-right: 5px;
       }
+      #searchIcon {
+        display: none;
+      }
       @media(min-width: 768px) {
         #menuIcon {
           display: none;
