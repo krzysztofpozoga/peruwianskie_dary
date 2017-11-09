@@ -8,7 +8,6 @@ import SuszoneZiola from './suszoneZiola.jsx';
 import Maka from './maka.jsx';
 import Ekstrakty from './ekstrakty.jsx';
 import SuperFoods from './superfoods.jsx';
-import SearchedProducts from './searchedProducts.jsx';
 import AboutShop from './aboutShop.jsx';
 import Contact from './contact.jsx';
 import NotFound from './notFound.jsx';
@@ -18,9 +17,7 @@ class Template extends React.Component {
     super(props);
     this.state = {
       menuDisplay: '',
-      searcherDisplay: '',
-      searchText: '',
-      searchedLink: ''
+      searcherDisplay: ''
     }
   }
 
@@ -48,11 +45,11 @@ class Template extends React.Component {
     }
   }
 
-  getText = (event) => {
-    this.setState({
-        searchText: event.target.value
-    })
-  }
+  // getText = (event) => {
+  //   this.setState({
+  //       searchText: event.target.value
+  //   })
+  // }
 
   render(){
     return (
