@@ -2,6 +2,8 @@ import React from 'react';
 
 class AboutShop extends React.Component {
   render(){
+    let app = document.getElementById('app');
+    app.style.backgroundImage	=	"url(images/b.jpg)";
     return (
         <div className="aboutShop">
           <div className="container">

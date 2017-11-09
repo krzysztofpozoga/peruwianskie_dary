@@ -8211,96 +8211,98 @@ var AboutShop = function (_React$Component) {
   }
 
   _createClass(AboutShop, [{
-    key: "render",
+    key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
       return _react2.default.createElement(
-        "div",
-        { className: "aboutShop" },
+        'div',
+        { className: 'aboutShop' },
         _react2.default.createElement(
-          "div",
-          { className: "container" },
+          'div',
+          { className: 'container' },
           _react2.default.createElement(
-            "h2",
+            'h2',
             null,
-            "O SKLEPIE"
+            'O SKLEPIE'
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "W\u0142a\u015Bcicielem sklepu jest czeska firma Uncaria \u010CR ( rok za\u0142o\u017Cenia 2001) zajmuj\u0105ca si\u0119  ju\u017C od 14 lat sprowadzaniem naturalnych  skarb\xF3w przyrody -  zio\u0142 prosto z andyjskiej i amazo\u0144skiej  naturalnej apteki, dar\xF3w peruwia\u0144skich ogrod\xF3w, superfoods, Bio Organic i Wild."
+            'W\u0142a\u015Bcicielem sklepu jest czeska firma Uncaria \u010CR ( rok za\u0142o\u017Cenia 2001) zajmuj\u0105ca si\u0119  ju\u017C od 14 lat sprowadzaniem naturalnych  skarb\xF3w przyrody -  zio\u0142 prosto z andyjskiej i amazo\u0144skiej  naturalnej apteki, dar\xF3w peruwia\u0144skich ogrod\xF3w, superfoods, Bio Organic i Wild.'
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Sklep jest skonstruowany w j\u0119zyku polskim  jako odpowied\u017A na liczne Pa\u0144stwa pro\u015Bby o jego za\u0142o\u017Cenie kierowane pod czeskim adresem. "
+            'Sklep jest skonstruowany w j\u0119zyku polskim  jako odpowied\u017A na liczne Pa\u0144stwa pro\u015Bby o jego za\u0142o\u017Cenie kierowane pod czeskim adresem. '
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Magazyn wspomnianych wspania\u0142o\u015Bci znajduje si\u0119 w Czechach, czyli mimo \u017Ce sklep internetowy  znajduje si\u0119 na polskich stronach to zakup jest de facto dokonywany w Czechach, sk\u0105d po z\u0142o\u017Ceniu zam\xF3wienia i wybraniu sposobu zap\u0142aty paczka zostanie bezw\u0142ocznie wys\u0142ana."
+            'Magazyn wspomnianych wspania\u0142o\u015Bci znajduje si\u0119 w Czechach, czyli mimo \u017Ce sklep internetowy  znajduje si\u0119 na polskich stronach to zakup jest de facto dokonywany w Czechach, sk\u0105d po z\u0142o\u017Ceniu zam\xF3wienia i wybraniu sposobu zap\u0142aty paczka zostanie bezw\u0142ocznie wys\u0142ana.'
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Chc\u0105c ograniczy\u0107 w jak najwi\u0119kszym stopniu koszty ponoszone przez Pa\u0144stwo:"
+            'Chc\u0105c ograniczy\u0107 w jak najwi\u0119kszym stopniu koszty ponoszone przez Pa\u0144stwo:'
           ),
           _react2.default.createElement(
-            "ul",
+            'ul',
             null,
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "za\u0142o\u017Cyli\u015Bmy nasze konto w polskim Banku ING (oszcz\u0119dzaj\u0105c wysokich koszt\xF3w przelewu do czeskiego banku)"
+              'za\u0142o\u017Cyli\u015Bmy nasze konto w polskim Banku ING (oszcz\u0119dzaj\u0105c wysokich koszt\xF3w przelewu do czeskiego banku)'
             ),
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "wysy\u0142k\u0119 za po\u015Brednictwem kuriera  PPL / DHL ( w Polsce DHL)"
+              'wysy\u0142k\u0119 za po\u015Brednictwem kuriera  PPL / DHL ( w Polsce DHL)'
             )
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Paczka  z Czech powinna dotrze\u0107 do Pa\u0144stwa najdalej do 5 dni. O nadaniu paczki zostaniecie Pa\u0144stwo powiadomieni e -mailem."
+            'Paczka  z Czech powinna dotrze\u0107 do Pa\u0144stwa najdalej do 5 dni. O nadaniu paczki zostaniecie Pa\u0144stwo powiadomieni e -mailem.'
           ),
           _react2.default.createElement(
-            "ul",
+            'ul',
             null,
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "Koszty wysy\u0142ki pokrywa Zamawiaj\u0105cy."
+              'Koszty wysy\u0142ki pokrywa Zamawiaj\u0105cy.'
             ),
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "Koszt ten wynosi 27,00 PLN "
+              'Koszt ten wynosi 27,00 PLN '
             ),
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "Przy zam\xF3wieniu na ponad 250,00  PLN - koszt wysy\u0142ki pokrywa  firma Uncaria \u010CR."
+              'Przy zam\xF3wieniu na ponad 250,00  PLN - koszt wysy\u0142ki pokrywa  firma Uncaria \u010CR.'
             ),
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "Podane wy\u017Cej koszty dotycz\u0105 tylko wysy\u0142ki na teren Polski."
+              'Podane wy\u017Cej koszty dotycz\u0105 tylko wysy\u0142ki na teren Polski.'
             ),
             _react2.default.createElement(
-              "li",
+              'li',
               null,
-              "W przypadku wysy\u0142ki do innego kraju prosimy o kontakt w celu ustalenia koszt\xF3w."
+              'W przypadku wysy\u0142ki do innego kraju prosimy o kontakt w celu ustalenia koszt\xF3w.'
             )
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "SERDECZNIE ZAPRASZAMY NA WYGODNE ZAKUPY W POLSKICH CENACH Z WYSY\u0141K\u0104 Z CZESKIEJ REPUBLIKI."
+            'SERDECZNIE ZAPRASZAMY NA WYGODNE ZAKUPY W POLSKICH CENACH Z WYSY\u0141K\u0104 Z CZESKIEJ REPUBLIKI.'
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Cieszymy si\u0119, \u017Ce mo\u017Cemy by\u0107 bli\u017Cej Was!"
+            'Cieszymy si\u0119, \u017Ce mo\u017Cemy by\u0107 bli\u017Cej Was!'
           )
         )
       );
@@ -8347,87 +8349,89 @@ var Contact = function (_React$Component) {
   }
 
   _createClass(Contact, [{
-    key: "render",
+    key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
       return _react2.default.createElement(
-        "div",
-        { className: "contact" },
+        'div',
+        { className: 'contact' },
         _react2.default.createElement(
-          "div",
-          { className: "container" },
+          'div',
+          { className: 'container' },
           _react2.default.createElement(
-            "div",
-            { className: "data" },
+            'div',
+            { className: 'data' },
             _react2.default.createElement(
-              "h2",
+              'h2',
               null,
-              "Kontakt"
+              'Kontakt'
             ),
             _react2.default.createElement(
-              "div",
-              { className: "info" },
+              'div',
+              { className: 'info' },
               _react2.default.createElement(
-                "div",
-                { className: "left" },
-                _react2.default.createElement("img", { className: "icon home", src: "images/home.jpg" }),
-                _react2.default.createElement("img", { className: "icon tel", src: "images/tel.jpg" }),
-                _react2.default.createElement("img", { className: "icon email", src: "images/email.jpg" })
+                'div',
+                { className: 'left' },
+                _react2.default.createElement('img', { className: 'icon home', src: 'images/home.jpg' }),
+                _react2.default.createElement('img', { className: 'icon tel', src: 'images/tel.jpg' }),
+                _react2.default.createElement('img', { className: 'icon email', src: 'images/email.jpg' })
               ),
               _react2.default.createElement(
-                "div",
-                { className: "right" },
-                _react2.default.createElement("hr", null),
+                'div',
+                { className: 'right' },
+                _react2.default.createElement('hr', null),
                 _react2.default.createElement(
-                  "div",
+                  'div',
                   null,
-                  "Adres:"
+                  'Adres:'
                 ),
                 _react2.default.createElement(
-                  "p",
+                  'p',
                   null,
-                  "UNCARIA \u010CR, s.r.o"
+                  'UNCARIA \u010CR, s.r.o'
                 ),
                 _react2.default.createElement(
-                  "p",
+                  'p',
                   null,
-                  "Smetanova 3"
+                  'Smetanova 3'
                 ),
                 _react2.default.createElement(
-                  "p",
+                  'p',
                   null,
-                  "466 01 JABLONEC n/NISOU"
+                  '466 01 JABLONEC n/NISOU'
                 ),
                 _react2.default.createElement(
-                  "p",
+                  'p',
                   null,
-                  "\u010CESKA REPUBLIKA"
+                  '\u010CESKA REPUBLIKA'
                 ),
-                _react2.default.createElement("hr", null),
+                _react2.default.createElement('hr', null),
                 _react2.default.createElement(
-                  "div",
+                  'div',
                   null,
-                  "Telefon:"
-                ),
-                _react2.default.createElement(
-                  "p",
-                  null,
-                  "Uncaria \u010CR - 00 420 483 330 600"
+                  'Telefon:'
                 ),
                 _react2.default.createElement(
-                  "p",
+                  'p',
                   null,
-                  "PL - 783 777 080"
-                ),
-                _react2.default.createElement("hr", null),
-                _react2.default.createElement(
-                  "div",
-                  null,
-                  "E-mail:"
+                  'Uncaria \u010CR - 00 420 483 330 600'
                 ),
                 _react2.default.createElement(
-                  "p",
+                  'p',
                   null,
-                  "odnowa.jedzeniowa@gmail.com"
+                  'PL - 783 777 080'
+                ),
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  'E-mail:'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'odnowa.jedzeniowa@gmail.com'
                 )
               )
             )
@@ -8505,6 +8509,8 @@ var Ekstrakty = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/ekstrakty/' + elem.id;
         return _react2.default.createElement(
@@ -8602,38 +8608,40 @@ var MainPage = function (_React$Component) {
   }
 
   _createClass(MainPage, [{
-    key: "render",
+    key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
       return _react2.default.createElement(
-        "div",
-        { className: "mainPage" },
+        'div',
+        { className: 'mainPage' },
         _react2.default.createElement(
-          "div",
-          { className: "container" },
+          'div',
+          { className: 'container' },
           _react2.default.createElement(
-            "section",
-            { className: "banner" },
+            'section',
+            { className: 'banner' },
             _react2.default.createElement(
-              "h1",
+              'h1',
               null,
-              "Witaj na stronie po\u015Bwi\u0119conej produktom  pochodz\u0105cym z czystej, dziewiczej, peruwia\u0144skiej przyrody. "
+              'Witaj na stronie po\u015Bwi\u0119conej produktom  pochodz\u0105cym z czystej, dziewiczej, peruwia\u0144skiej przyrody. '
             )
           ),
           _react2.default.createElement(
-            "section",
-            { className: "welcomeText" },
+            'section',
+            { className: 'welcomeText' },
             _react2.default.createElement(
-              "div",
-              { className: "paragraphs" },
+              'div',
+              { className: 'paragraphs' },
               _react2.default.createElement(
-                "p",
+                'p',
                 null,
-                "Na stronie znajdziesz przydatne informacje, opisy i zastosowanie niekt\xF3rych zi\xF3\u0142 i \u017Cywno\u015Bci \u2013 wszystko po to, by da\u0107 Ci mo\u017Cliwo\u015B\u0107 poznania i przyjrzenia si\u0119 nieocenionym darom natury i wykorzystania ich w \u017Cywieniu czy leczeniu. Po szersze informacje zapraszam Ci\u0119 do zielnika."
+                'Na stronie znajdziesz przydatne informacje, opisy i zastosowanie niekt\xF3rych zi\xF3\u0142 i \u017Cywno\u015Bci \u2013 wszystko po to, by da\u0107 Ci mo\u017Cliwo\u015B\u0107 poznania i przyjrzenia si\u0119 nieocenionym darom natury i wykorzystania ich w \u017Cywieniu czy leczeniu. Po szersze informacje zapraszam Ci\u0119 do zielnika.'
               ),
               _react2.default.createElement(
-                "p",
+                'p',
                 null,
-                "Po klikni\u0119ciu na ikonk\u0119 kup teraz zostaniesz przekierowany na stron\u0119 sklepu czeskiej firmy Uncaria CR, z kt\xF3r\u0105 wsp\xF3\u0142pracuj\u0119 przy propagowaniu kultury i wytwor\xF3w potomk\xF3w Ink\xF3w oraz lud\xF3w Amazonii. Kupuj\u0105c wpisz kod \u201Emedea\u201D a dostaniesz rabat. W sklepie znajdziesz mi\u0119dzy innymi unikalne m\u0105czki z canihua, peruwia\u0144skiego bobu czy kiwicha, najlepszej jako\u015Bci olej sacha inchi, suszony sok z trzciny cukrowej oraz przepyszne algarrobo."
+                'Po klikni\u0119ciu na ikonk\u0119 kup teraz zostaniesz przekierowany na stron\u0119 sklepu czeskiej firmy Uncaria CR, z kt\xF3r\u0105 wsp\xF3\u0142pracuj\u0119 przy propagowaniu kultury i wytwor\xF3w potomk\xF3w Ink\xF3w oraz lud\xF3w Amazonii. Kupuj\u0105c wpisz kod \u201Emedea\u201D a dostaniesz rabat. W sklepie znajdziesz mi\u0119dzy innymi unikalne m\u0105czki z canihua, peruwia\u0144skiego bobu czy kiwicha, najlepszej jako\u015Bci olej sacha inchi, suszony sok z trzciny cukrowej oraz przepyszne algarrobo.'
               )
             )
           )
@@ -8710,6 +8718,8 @@ var Maka = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/maka/' + elem.id;
         return _react2.default.createElement(
@@ -8809,25 +8819,27 @@ var NotFound = function (_React$Component) {
   }
 
   _createClass(NotFound, [{
-    key: "render",
+    key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
       return _react2.default.createElement(
-        "div",
-        { className: "notFound" },
+        'div',
+        { className: 'notFound' },
         _react2.default.createElement(
-          "div",
-          { className: "container" },
+          'div',
+          { className: 'container' },
           _react2.default.createElement(
-            "h1",
+            'h1',
             null,
-            "Uuuups! ",
-            _react2.default.createElement("br", null),
-            "Error 404"
+            'Uuuups! ',
+            _react2.default.createElement('br', null),
+            'Error 404'
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Page not found"
+            'Page not found'
           )
         )
       );
@@ -8902,6 +8914,8 @@ var SuperFoods = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/superfoods/' + elem.id;
         return _react2.default.createElement(
@@ -9027,6 +9041,8 @@ var SuszoneZiola = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/suszone-ziola/' + elem.id;
         return _react2.default.createElement(
