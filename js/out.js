@@ -8820,12 +8820,14 @@ var NotFound = function (_React$Component) {
           _react2.default.createElement(
             "h1",
             null,
-            "Uuuups! 404"
+            "Uuuups! ",
+            _react2.default.createElement("br", null),
+            "Error 404"
           ),
           _react2.default.createElement(
             "p",
             null,
-            "Co\u015B posz\u0142o nie tak :("
+            "Page not found"
           )
         )
       );
