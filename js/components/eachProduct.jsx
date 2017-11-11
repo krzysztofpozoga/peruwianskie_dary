@@ -48,7 +48,7 @@ class EachProduct extends React.Component {
           </div>
         </div>
         <a href={this.state.product.link} target="_blank">
-          <button>Przejdź do sklepu</button>
+          <button>Kup teraz</button>
         </a>
       </div>
     )

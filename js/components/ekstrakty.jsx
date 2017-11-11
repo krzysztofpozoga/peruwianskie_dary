@@ -40,7 +40,7 @@ class Ekstrakty extends React.Component {
             </div>
           </IndexLink>
           <a href={elem.link} target="_blank">
-            <button>Przejdź do sklepu</button>
+            <button>Kup teraz</button>
           </a>
         </div>
       )

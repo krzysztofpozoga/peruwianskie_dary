@@ -8551,7 +8551,7 @@ var Ekstrakty = function (_React$Component) {
             _react2.default.createElement(
               'button',
               null,
-              'Przejd\u017A do sklepu'
+              'Kup teraz'
             )
           )
         );
@@ -8760,7 +8760,7 @@ var Maka = function (_React$Component) {
             _react2.default.createElement(
               'button',
               null,
-              'Przejd\u017A do sklepu'
+              'Kup teraz'
             )
           )
         );
@@ -8956,7 +8956,7 @@ var SuperFoods = function (_React$Component) {
             _react2.default.createElement(
               'button',
               null,
-              'Przejd\u017A do sklepu'
+              'Kup teraz'
             )
           )
         );
@@ -9083,7 +9083,7 @@ var SuszoneZiola = function (_React$Component) {
             _react2.default.createElement(
               'button',
               null,
-              'Przejd\u017A do sklepu'
+              'Kup teraz'
             )
           )
         );
@@ -15214,7 +15214,7 @@ var EachProduct = function (_React$Component) {
           _react2.default.createElement(
             "button",
             null,
-            "Przejd\u017A do sklepu"
+            "Kup teraz"
           )
         )
       );
@@ -15351,7 +15351,7 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             "div",
             { className: "row" },
-            _react2.default.createElement("div", { "class": "fb-like", "data-href": "...", "data-layout": "button_count", "data-action": "like", "data-size": "large", "data-show-faces": "false", "data-share": "true" })
+            _react2.default.createElement("div", { className: "fb-like", "data-href": "...", "data-layout": "button_count", "data-action": "like", "data-size": "large", "data-show-faces": "false", "data-share": "true" })
           ),
           _react2.default.createElement(
             "div",
