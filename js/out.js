@@ -28349,7 +28349,7 @@ var Contact = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
+      app.style.backgroundImage = "url(images/b1.jpg)";
       return _react2.default.createElement(
         'div',
         { className: 'contact' },
