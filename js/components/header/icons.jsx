@@ -1,4 +1,5 @@
 import React from 'react';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
 class Icons extends React.Component {
   constructor(props){
@@ -8,9 +9,11 @@ class Icons extends React.Component {
     return (
       <div className="icons">
         <div className="container">
-          <div className="logo">
-            <img src="images/logo.png"/>
-          </div>
+          <IndexLink to="/" >
+            <div className="logo">
+              <img src="images/logo.png"/>
+            </div>
+          </IndexLink>
           <div className="searchIcons">
             <div className="herbariumLink">
               <a href="https://www.peruwianskieziola.pl/DefaultHerbar" target="_blank">

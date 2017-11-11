@@ -27848,6 +27848,8 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouter = __webpack_require__(20);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27875,9 +27877,13 @@ var Icons = function (_React$Component) {
           "div",
           { className: "container" },
           _react2.default.createElement(
-            "div",
-            { className: "logo" },
-            _react2.default.createElement("img", { src: "images/logo.png" })
+            _reactRouter.IndexLink,
+            { to: "/" },
+            _react2.default.createElement(
+              "div",
+              { className: "logo" },
+              _react2.default.createElement("img", { src: "images/logo.png" })
+            )
           ),
           _react2.default.createElement(
             "div",
