@@ -11,7 +11,7 @@ class Header extends React.Component {
       <header>
         <div className="container">
           <div className="row">
-            <div className="fb-like" data-href="..." data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true" data-colorscheme="dark"></div>
+            <div className="fb-like" data-href="..." data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
           </div>
           <div className="row">
             <div className="searcher" style={{display: this.props.display}}>
