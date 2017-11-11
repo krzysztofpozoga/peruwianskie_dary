@@ -6,17 +6,6 @@ header {
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    .facebookLike {
-      display: flex;
-      justify-content: flex-end;
-      button {
-        width: 100px;
-        color: white;
-        background-color: #365899;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    }
     .searcher {
       display: none;
       justify-content: flex-end;

@@ -27964,7 +27964,7 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             "div",
             { className: "row" },
-            _react2.default.createElement("div", { className: "fb-like", "data-href": "...", "data-layout": "button_count", "data-action": "like", "data-size": "large", "data-show-faces": "false", "data-share": "true" })
+            _react2.default.createElement("div", { className: "fb-like", "data-href": "...", "data-layout": "button_count", "data-action": "like", "data-size": "large", "data-show-faces": "false", "data-share": "true", "data-colorscheme": "dark" })
           ),
           _react2.default.createElement(
             "div",
