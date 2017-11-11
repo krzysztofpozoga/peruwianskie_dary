@@ -1,16 +1,16 @@
 import React from 'react';
 import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 import Template from './template.jsx';
-import MainPage from './mainPage.jsx';
-import SuszoneZiola from './suszoneZiola.jsx';
-import Maka from './maka.jsx';
-import Ekstrakty from './ekstrakty.jsx';
-import SuperFoods from './superfoods.jsx';
-import AboutShop from './aboutShop.jsx';
-import Contact from './contact.jsx';
-import NotFound from './notFound.jsx';
-import EachProduct from './eachProduct.jsx';
 import TemplateProduct from './templateProduct.jsx';
+import MainPage from './content/mainPage.jsx';
+import SuszoneZiola from './content/suszoneZiola.jsx';
+import Maka from './content/maka.jsx';
+import Ekstrakty from './content/ekstrakty.jsx';
+import SuperFoods from './content/superfoods.jsx';
+import AboutShop from './content/aboutShop.jsx';
+import Contact from './content/contact.jsx';
+import NotFound from './content/notFound.jsx';
+import EachProduct from './content/eachProduct.jsx';
 
 class Main extends React.Component {
   render(){

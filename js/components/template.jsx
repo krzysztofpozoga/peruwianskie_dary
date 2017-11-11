@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from './header.jsx';
-import Icons from './icons.jsx';
-import Nav from './nav.jsx';
-import Footer from './footer.jsx';
-import MainPage from './mainPage.jsx';
-import SuszoneZiola from './suszoneZiola.jsx';
-import Maka from './maka.jsx';
-import Ekstrakty from './ekstrakty.jsx';
-import SuperFoods from './superfoods.jsx';
-import AboutShop from './aboutShop.jsx';
-import Contact from './contact.jsx';
-import NotFound from './notFound.jsx';
+import Header from './header/header.jsx';
+import Icons from './header/icons.jsx';
+import Nav from './header/nav.jsx';
+import Footer from './footer/footer.jsx';
+import MainPage from './content/mainPage.jsx';
+import SuszoneZiola from './content/suszoneZiola.jsx';
+import Maka from './content/maka.jsx';
+import Ekstrakty from './content/ekstrakty.jsx';
+import SuperFoods from './content/superfoods.jsx';
+import AboutShop from './content/aboutShop.jsx';
+import Contact from './content/contact.jsx';
+import NotFound from './content/notFound.jsx';
 
 class Template extends React.Component {
   constructor(props){
