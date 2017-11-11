@@ -25,7 +25,7 @@ class SuszoneZiola extends React.Component {
   }
   render(){
     let app = document.getElementById('app');
-    app.style.backgroundImage	=	"url(images/backgroundTra.jpg)";
+    app.style.backgroundImage	=	"url(images/background.jpg)";
     const products = this.state.products.map(elem => {
       const product_path = `/suszone-ziola/${elem.id}`;
       return (

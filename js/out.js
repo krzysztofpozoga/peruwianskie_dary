@@ -9042,7 +9042,7 @@ var SuszoneZiola = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      app.style.backgroundImage = "url(images/background.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/suszone-ziola/' + elem.id;
         return _react2.default.createElement(
