@@ -4,7 +4,7 @@ import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-rou
 class NotFound extends React.Component {
   render(){
     let app = document.getElementById('app');
-    app.style.backgroundImage	=	"url(images/b.jpg)";
+    app.style.backgroundImage	=	"url(images/Fotolia_130262458_L.jpg)";
     return (
         <div className="notFound">
           <div className="container">

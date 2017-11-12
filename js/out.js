@@ -8214,7 +8214,7 @@ var AboutShop = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
       return _react2.default.createElement(
         'div',
         { className: 'aboutShop' },
@@ -8352,7 +8352,7 @@ var Contact = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b1.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
       return _react2.default.createElement(
         'div',
         { className: 'contact' },
@@ -8611,7 +8611,7 @@ var MainPage = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
       return _react2.default.createElement(
         'div',
         { className: 'mainPage' },
@@ -8822,7 +8822,7 @@ var NotFound = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
       return _react2.default.createElement(
         'div',
         { className: 'notFound' },

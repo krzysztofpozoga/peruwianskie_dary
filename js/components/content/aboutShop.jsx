@@ -3,7 +3,7 @@ import React from 'react';
 class AboutShop extends React.Component {
   render(){
     let app = document.getElementById('app');
-    app.style.backgroundImage	=	"url(images/b.jpg)";
+    app.style.backgroundImage	=	"url(images/Fotolia_130262458_L.jpg)";
     return (
         <div className="aboutShop">
           <div className="container">

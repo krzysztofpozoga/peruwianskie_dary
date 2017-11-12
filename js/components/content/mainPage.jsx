@@ -3,7 +3,7 @@ import React from 'react';
 class MainPage extends React.Component {
   render(){
     let app = document.getElementById('app');
-    app.style.backgroundImage	=	"url(images/b.jpg)";
+    app.style.backgroundImage	=	"url(images/Fotolia_130262458_L.jpg)";
     return (
       <div className="mainPage">
         <div className="container">
