@@ -551,7 +551,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var ReactDOMComponentFlags = __webpack_require__(92);
 
 var invariant = __webpack_require__(1);
@@ -1918,6 +1918,95 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 
 /***/ }),
 /* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Router__ = __webpack_require__(233);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_0__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(111);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_1__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__IndexLink__ = __webpack_require__(229);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexLink", function() { return __WEBPACK_IMPORTED_MODULE_2__IndexLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__withRouter__ = __webpack_require__(244);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__withRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__ = __webpack_require__(230);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRedirect", function() { return __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__IndexRoute__ = __webpack_require__(231);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRoute", function() { return __WEBPACK_IMPORTED_MODULE_5__IndexRoute__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(113);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(232);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouteUtils__ = __webpack_require__(20);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createRoutes", function() { return __WEBPACK_IMPORTED_MODULE_8__RouteUtils__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__RouterContext__ = __webpack_require__(70);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RouterContext", function() { return __WEBPACK_IMPORTED_MODULE_9__RouterContext__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__PropTypes__ = __webpack_require__(69);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "locationShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "routerShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__match__ = __webpack_require__(242);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "match", function() { return __WEBPACK_IMPORTED_MODULE_11__match__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__ = __webpack_require__(118);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "useRouterHistory", function() { return __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__PatternUtils__ = __webpack_require__(27);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatPattern", function() { return __WEBPACK_IMPORTED_MODULE_13__PatternUtils__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__ = __webpack_require__(235);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyRouterMiddleware", function() { return __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__browserHistory__ = __webpack_require__(236);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "browserHistory", function() { return __WEBPACK_IMPORTED_MODULE_15__browserHistory__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hashHistory__ = __webpack_require__(240);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "hashHistory", function() { return __WEBPACK_IMPORTED_MODULE_16__hashHistory__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__ = __webpack_require__(115);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createMemoryHistory", function() { return __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__["a"]; });
+/* components */
+
+
+
+
+
+
+
+
+
+/* components (configuration) */
+
+
+
+
+
+
+
+
+
+
+/* utils */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* histories */
+
+
+
+
+
+
+
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2020,7 +2109,7 @@ var createPath = exports.createPath = function createPath(location) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2233,7 +2322,7 @@ module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2323,95 +2412,6 @@ function createRoutes(routes) {
 
   return routes;
 }
-
-/***/ }),
-/* 20 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Router__ = __webpack_require__(233);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_0__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(111);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_1__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__IndexLink__ = __webpack_require__(229);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexLink", function() { return __WEBPACK_IMPORTED_MODULE_2__IndexLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__withRouter__ = __webpack_require__(244);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__withRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__ = __webpack_require__(230);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRedirect", function() { return __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__IndexRoute__ = __webpack_require__(231);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRoute", function() { return __WEBPACK_IMPORTED_MODULE_5__IndexRoute__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(113);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(232);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouteUtils__ = __webpack_require__(19);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createRoutes", function() { return __WEBPACK_IMPORTED_MODULE_8__RouteUtils__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__RouterContext__ = __webpack_require__(70);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RouterContext", function() { return __WEBPACK_IMPORTED_MODULE_9__RouterContext__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__PropTypes__ = __webpack_require__(69);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "locationShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "routerShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__match__ = __webpack_require__(242);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "match", function() { return __WEBPACK_IMPORTED_MODULE_11__match__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__ = __webpack_require__(118);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "useRouterHistory", function() { return __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__PatternUtils__ = __webpack_require__(27);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatPattern", function() { return __WEBPACK_IMPORTED_MODULE_13__PatternUtils__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__ = __webpack_require__(235);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyRouterMiddleware", function() { return __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__browserHistory__ = __webpack_require__(236);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "browserHistory", function() { return __WEBPACK_IMPORTED_MODULE_15__browserHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hashHistory__ = __webpack_require__(240);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "hashHistory", function() { return __WEBPACK_IMPORTED_MODULE_16__hashHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__ = __webpack_require__(115);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createMemoryHistory", function() { return __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__["a"]; });
-/* components */
-
-
-
-
-
-
-
-
-
-/* components (configuration) */
-
-
-
-
-
-
-
-
-
-
-/* utils */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* histories */
-
-
-
-
-
-
-
 
 /***/ }),
 /* 21 */
@@ -2964,7 +2964,7 @@ var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _Actions = __webpack_require__(37);
 
@@ -5692,7 +5692,7 @@ var _DOMUtils = __webpack_require__(38);
 
 var _DOMStateStorage = __webpack_require__(84);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _ExecutionEnvironment = __webpack_require__(48);
 
@@ -5802,7 +5802,7 @@ exports.__esModule = true;
 
 var _AsyncUtils = __webpack_require__(148);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _runTransitionHook = __webpack_require__(50);
 
@@ -7992,7 +7992,7 @@ var locationShape = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_prop_types
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getRouteParams__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ContextUtils__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RouteUtils__ = __webpack_require__(20);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -8177,14 +8177,935 @@ module.exports = lowPriorityWarning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AboutShop = function (_React$Component) {
+  _inherits(AboutShop, _React$Component);
+
+  function AboutShop() {
+    _classCallCheck(this, AboutShop);
+
+    return _possibleConstructorReturn(this, (AboutShop.__proto__ || Object.getPrototypeOf(AboutShop)).apply(this, arguments));
+  }
+
+  _createClass(AboutShop, [{
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
+      return _react2.default.createElement(
+        'div',
+        { className: 'aboutShop' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'O SKLEPIE'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'W\u0142a\u015Bcicielem sklepu jest czeska firma Uncaria \u010CR ( rok za\u0142o\u017Cenia 2001) zajmuj\u0105ca si\u0119  ju\u017C od 14 lat sprowadzaniem naturalnych  skarb\xF3w przyrody -  zio\u0142 prosto z andyjskiej i amazo\u0144skiej  naturalnej apteki, dar\xF3w peruwia\u0144skich ogrod\xF3w, superfoods, Bio Organic i Wild.'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Sklep jest skonstruowany w j\u0119zyku polskim  jako odpowied\u017A na liczne Pa\u0144stwa pro\u015Bby o jego za\u0142o\u017Cenie kierowane pod czeskim adresem. '
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Magazyn wspomnianych wspania\u0142o\u015Bci znajduje si\u0119 w Czechach, czyli mimo \u017Ce sklep internetowy  znajduje si\u0119 na polskich stronach to zakup jest de facto dokonywany w Czechach, sk\u0105d po z\u0142o\u017Ceniu zam\xF3wienia i wybraniu sposobu zap\u0142aty paczka zostanie bezw\u0142ocznie wys\u0142ana.'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Chc\u0105c ograniczy\u0107 w jak najwi\u0119kszym stopniu koszty ponoszone przez Pa\u0144stwo:'
+          ),
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              'za\u0142o\u017Cyli\u015Bmy nasze konto w polskim Banku ING (oszcz\u0119dzaj\u0105c wysokich koszt\xF3w przelewu do czeskiego banku)'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'wysy\u0142k\u0119 za po\u015Brednictwem kuriera  PPL / DHL ( w Polsce DHL)'
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Paczka  z Czech powinna dotrze\u0107 do Pa\u0144stwa najdalej do 5 dni. O nadaniu paczki zostaniecie Pa\u0144stwo powiadomieni e -mailem.'
+          ),
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              'Koszty wysy\u0142ki pokrywa Zamawiaj\u0105cy.'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Koszt ten wynosi 27,00 PLN '
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Przy zam\xF3wieniu na ponad 250,00  PLN - koszt wysy\u0142ki pokrywa  firma Uncaria \u010CR.'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Podane wy\u017Cej koszty dotycz\u0105 tylko wysy\u0142ki na teren Polski.'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'W przypadku wysy\u0142ki do innego kraju prosimy o kontakt w celu ustalenia koszt\xF3w.'
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'SERDECZNIE ZAPRASZAMY NA WYGODNE ZAKUPY W POLSKICH CENACH Z WYSY\u0141K\u0104 Z CZESKIEJ REPUBLIKI.'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Cieszymy si\u0119, \u017Ce mo\u017Cemy by\u0107 bli\u017Cej Was!'
+          )
+        )
+      );
+    }
+  }]);
+
+  return AboutShop;
+}(_react2.default.Component);
+
+exports.default = AboutShop;
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+  _inherits(Contact, _React$Component);
+
+  function Contact() {
+    _classCallCheck(this, Contact);
+
+    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+  }
+
+  _createClass(Contact, [{
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b1.jpg)";
+      return _react2.default.createElement(
+        'div',
+        { className: 'contact' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'data' },
+            _react2.default.createElement(
+              'h2',
+              null,
+              'Kontakt'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'info' },
+              _react2.default.createElement(
+                'div',
+                { className: 'left' },
+                _react2.default.createElement('img', { className: 'icon home', src: 'images/home.jpg' }),
+                _react2.default.createElement('img', { className: 'icon tel', src: 'images/tel.jpg' }),
+                _react2.default.createElement('img', { className: 'icon email', src: 'images/email.jpg' })
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'right' },
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  'Adres:'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'UNCARIA \u010CR, s.r.o'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Smetanova 3'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  '466 01 JABLONEC n/NISOU'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  '\u010CESKA REPUBLIKA'
+                ),
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  'Telefon:'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Uncaria \u010CR - 00 420 483 330 600'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'PL - 783 777 080'
+                ),
+                _react2.default.createElement('hr', null),
+                _react2.default.createElement(
+                  'div',
+                  null,
+                  'E-mail:'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'odnowa.jedzeniowa@gmail.com'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Ekstrakty = function (_React$Component) {
+  _inherits(Ekstrakty, _React$Component);
+
+  function Ekstrakty(props) {
+    _classCallCheck(this, Ekstrakty);
+
+    var _this = _possibleConstructorReturn(this, (Ekstrakty.__proto__ || Object.getPrototypeOf(Ekstrakty)).call(this, props));
+
+    _this.state = {
+      products: []
+    };
+    return _this;
+  }
+
+  _createClass(Ekstrakty, [{
+    key: 'getProductsData',
+    value: function getProductsData() {
+      var _this2 = this;
+
+      var link = 'https://www.peruwianskiedary.pl/categories/3/products';
+      fetch(link).then(function (resp) {
+        return resp.json();
+      }).then(function (data) {
+        _this2.setState({
+          products: data
+        });
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getProductsData();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      var products = this.state.products.map(function (elem) {
+        var product_path = '/ekstrakty/' + elem.id;
+        return _react2.default.createElement(
+          'div',
+          { key: elem.id, className: 'products' },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: product_path },
+            _react2.default.createElement(
+              'h2',
+              null,
+              elem.name,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'flip-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: elem.link, target: '_blank' },
+            _react2.default.createElement(
+              'button',
+              null,
+              'Kup teraz'
+            )
+          )
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'listOfProducts' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          products
+        )
+      );
+    }
+  }]);
+
+  return Ekstrakty;
+}(_react2.default.Component);
+
+exports.default = Ekstrakty;
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MainPage = function (_React$Component) {
+  _inherits(MainPage, _React$Component);
+
+  function MainPage() {
+    _classCallCheck(this, MainPage);
+
+    return _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).apply(this, arguments));
+  }
+
+  _createClass(MainPage, [{
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
+      return _react2.default.createElement(
+        'div',
+        { className: 'mainPage' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'section',
+            { className: 'banner' },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Witaj na stronie po\u015Bwi\u0119conej produktom  pochodz\u0105cym z czystej, dziewiczej, peruwia\u0144skiej przyrody. '
+            )
+          ),
+          _react2.default.createElement(
+            'section',
+            { className: 'welcomeText' },
+            _react2.default.createElement(
+              'div',
+              { className: 'paragraphs' },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Na stronie znajdziesz przydatne informacje, opisy i zastosowanie niekt\xF3rych zi\xF3\u0142 i \u017Cywno\u015Bci \u2013 wszystko po to, by da\u0107 Ci mo\u017Cliwo\u015B\u0107 poznania i przyjrzenia si\u0119 nieocenionym darom natury i wykorzystania ich w \u017Cywieniu czy leczeniu. Po szersze informacje zapraszam Ci\u0119 do zielnika.'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'Po klikni\u0119ciu na ikonk\u0119 kup teraz zostaniesz przekierowany na stron\u0119 sklepu czeskiej firmy Uncaria CR, z kt\xF3r\u0105 wsp\xF3\u0142pracuj\u0119 przy propagowaniu kultury i wytwor\xF3w potomk\xF3w Ink\xF3w oraz lud\xF3w Amazonii. Kupuj\u0105c wpisz kod \u201Emedea\u201D a dostaniesz rabat. W sklepie znajdziesz mi\u0119dzy innymi unikalne m\u0105czki z canihua, peruwia\u0144skiego bobu czy kiwicha, najlepszej jako\u015Bci olej sacha inchi, suszony sok z trzciny cukrowej oraz przepyszne algarrobo.'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return MainPage;
+}(_react2.default.Component);
+
+exports.default = MainPage;
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Maka = function (_React$Component) {
+  _inherits(Maka, _React$Component);
+
+  function Maka(props) {
+    _classCallCheck(this, Maka);
+
+    var _this = _possibleConstructorReturn(this, (Maka.__proto__ || Object.getPrototypeOf(Maka)).call(this, props));
+
+    _this.state = {
+      products: []
+    };
+    return _this;
+  }
+
+  _createClass(Maka, [{
+    key: 'getProductsData',
+    value: function getProductsData() {
+      var _this2 = this;
+
+      var link = 'https://www.peruwianskiedary.pl/categories/2/products';
+      fetch(link).then(function (resp) {
+        return resp.json();
+      }).then(function (data) {
+        _this2.setState({
+          products: data
+        });
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getProductsData();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      var products = this.state.products.map(function (elem) {
+        var product_path = '/maka/' + elem.id;
+        return _react2.default.createElement(
+          'div',
+          { key: elem.id, className: 'products' },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: product_path },
+            _react2.default.createElement(
+              'h2',
+              null,
+              elem.name,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'flip-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: elem.link, target: '_blank' },
+            _react2.default.createElement(
+              'button',
+              null,
+              'Kup teraz'
+            )
+          )
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'listOfProducts' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          products
+        )
+      );
+    }
+  }]);
+
+  return Maka;
+}(_react2.default.Component);
+
+exports.default = Maka;
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var NotFound = function (_React$Component) {
+  _inherits(NotFound, _React$Component);
+
+  function NotFound() {
+    _classCallCheck(this, NotFound);
+
+    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
+  }
+
+  _createClass(NotFound, [{
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/b.jpg)";
+      return _react2.default.createElement(
+        'div',
+        { className: 'notFound' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            'Uuuups! ',
+            _react2.default.createElement('br', null),
+            'Error 404'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Page not found'
+          )
+        )
+      );
+    }
+  }]);
+
+  return NotFound;
+}(_react2.default.Component);
+
+exports.default = NotFound;
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SuperFoods = function (_React$Component) {
+  _inherits(SuperFoods, _React$Component);
+
+  function SuperFoods(props) {
+    _classCallCheck(this, SuperFoods);
+
+    var _this = _possibleConstructorReturn(this, (SuperFoods.__proto__ || Object.getPrototypeOf(SuperFoods)).call(this, props));
+
+    _this.state = {
+      products: []
+    };
+    return _this;
+  }
+
+  _createClass(SuperFoods, [{
+    key: 'getProductsData',
+    value: function getProductsData() {
+      var _this2 = this;
+
+      var link = 'https://www.peruwianskiedary.pl/categories/4/products';
+      fetch(link).then(function (resp) {
+        return resp.json();
+      }).then(function (data) {
+        _this2.setState({
+          products: data
+        });
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getProductsData();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      var products = this.state.products.map(function (elem) {
+        var product_path = '/superfoods/' + elem.id;
+        return _react2.default.createElement(
+          'div',
+          { key: elem.id, className: 'products' },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: product_path },
+            _react2.default.createElement(
+              'h2',
+              null,
+              elem.name,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'flip-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: elem.link, target: '_blank' },
+            _react2.default.createElement(
+              'button',
+              null,
+              'Kup teraz'
+            )
+          )
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'listOfProducts' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          products
+        )
+      );
+    }
+  }]);
+
+  return SuperFoods;
+}(_react2.default.Component);
+
+exports.default = SuperFoods;
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SuszoneZiola = function (_React$Component) {
+  _inherits(SuszoneZiola, _React$Component);
+
+  function SuszoneZiola(props) {
+    _classCallCheck(this, SuszoneZiola);
+
+    var _this = _possibleConstructorReturn(this, (SuszoneZiola.__proto__ || Object.getPrototypeOf(SuszoneZiola)).call(this, props));
+
+    _this.state = {
+      products: []
+    };
+    return _this;
+  }
+
+  _createClass(SuszoneZiola, [{
+    key: 'getProductsData',
+    value: function getProductsData() {
+      var _this2 = this;
+
+      var link = 'https://www.peruwianskiedary.pl/categories/1/products';
+      fetch(link).then(function (resp) {
+        return resp.json();
+      }).then(function (data) {
+        _this2.setState({
+          products: data
+        });
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getProductsData();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var app = document.getElementById('app');
+      app.style.backgroundImage = "url(images/background.jpg)";
+      var products = this.state.products.map(function (elem) {
+        var product_path = '/suszone-ziola/' + elem.id;
+        return _react2.default.createElement(
+          'div',
+          { key: elem.id, className: 'products' },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: product_path },
+            _react2.default.createElement(
+              'h2',
+              null,
+              elem.name,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'flip-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: elem.link, target: '_blank' },
+            _react2.default.createElement(
+              'button',
+              null,
+              'Kup teraz'
+            )
+          )
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'listOfProducts' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          products
+        )
+      );
+    }
+  }]);
+
+  return SuszoneZiola;
+}(_react2.default.Component);
+
+exports.default = SuszoneZiola;
+
+/***/ }),
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9322,7 +10243,7 @@ var _runTransitionHook = __webpack_require__(50);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9441,7 +10362,7 @@ var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
 var _LocationUtils = __webpack_require__(24);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10421,7 +11342,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
@@ -11144,7 +12065,7 @@ module.exports = ReactInputSelection;
 var _prodInvariant = __webpack_require__(3);
 
 var DOMLazyTree = __webpack_require__(25);
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var React = __webpack_require__(29);
 var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactCurrentOwner = __webpack_require__(14);
@@ -12640,7 +13561,7 @@ function isPromise(obj) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PatternUtils__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(35);
 
@@ -13682,7 +14603,7 @@ var _reactDom = __webpack_require__(158);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _main = __webpack_require__(130);
+var _main = __webpack_require__(131);
 
 var _main2 = _interopRequireDefault(_main);
 
@@ -14158,10 +15079,393 @@ _reactDom2.default.render(_react2.default.createElement(_main2.default, null), d
 
 
 /***/ }),
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EachProduct = function (_React$Component) {
+  _inherits(EachProduct, _React$Component);
+
+  function EachProduct(props) {
+    _classCallCheck(this, EachProduct);
+
+    var _this = _possibleConstructorReturn(this, (EachProduct.__proto__ || Object.getPrototypeOf(EachProduct)).call(this, props));
+
+    _this.state = {
+      product: []
+    };
+    return _this;
+  }
+
+  _createClass(EachProduct, [{
+    key: "getProductInfo",
+    value: function getProductInfo() {
+      var _this2 = this;
+
+      var productLink = "https://www.peruwianskiedary.pl/categories/products/" + this.props.params.id;
+      fetch(productLink).then(function (resp) {
+        return resp.json();
+      }).then(function (data) {
+        _this2.setState({
+          product: data
+        });
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.getProductInfo();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var eachProduct = _react2.default.createElement(
+        "div",
+        { className: "product" },
+        _react2.default.createElement(
+          "h1",
+          null,
+          this.state.product.name
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "imageDescription" },
+          _react2.default.createElement("div", { className: "productImage", style: { backgroundImage: "url(https://www.peruwianskiedary.pl" + this.state.product.imageUrl + ")" } }),
+          _react2.default.createElement(
+            "div",
+            { className: "productDescription" },
+            _react2.default.createElement(
+              "h2",
+              null,
+              "OPIS"
+            ),
+            _react2.default.createElement(
+              "div",
+              null,
+              this.state.product.description
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "ingredients" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Sk\u0142adniki"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            this.state.product.ingredients
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "preparation" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Spos\xF3b przygotowania"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            this.state.product.preparation
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "comentary" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Kr\xF3tki komentarz"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            this.state.product.comments !== null ? this.state.product.comments : 'Brak komentarza'
+          )
+        ),
+        _react2.default.createElement(
+          "a",
+          { href: this.state.product.link, target: "_blank" },
+          _react2.default.createElement(
+            "button",
+            null,
+            "Kup teraz"
+          )
+        )
+      );
+      return _react2.default.createElement(
+        "section",
+        { className: "eachProduct" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          eachProduct
+        )
+      );
+    }
+  }]);
+
+  return EachProduct;
+}(_react2.default.Component);
+
+exports.default = EachProduct;
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "footer",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "div",
+            { className: "contact" },
+            _react2.default.createElement(
+              "span",
+              null,
+              "Copyright \xA9 2017. peruwianskiedary.pl"
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "odnowa.jedzeniowa@gmail.com"
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Footer;
+}(_react2.default.Component);
+
+exports.default = Footer;
+
+/***/ }),
+/* 128 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header(props) {
+    _classCallCheck(this, Header);
+
+    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+  }
+
+  _createClass(Header, [{
+    key: "render",
+    value: function render() {
+      var path = this.props.link;
+      return _react2.default.createElement(
+        "header",
+        null,
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            "div",
+            { className: "row" },
+            _react2.default.createElement("div", { className: "fb-like", "data-href": "...", "data-layout": "button_count", "data-action": "like", "data-size": "large", "data-show-faces": "false", "data-share": "true" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "row" },
+            _react2.default.createElement(
+              "div",
+              { className: "searcher", style: { display: this.props.display } },
+              _react2.default.createElement(
+                "form",
+                { className: "search" },
+                _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie...", onChange: this.props.getText }),
+                _react2.default.createElement(
+                  _reactRouter.IndexLink,
+                  { to: path },
+                  _react2.default.createElement("input", { type: "submit", value: "Szukaj" })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Header;
+}(_react2.default.Component);
+
+exports.default = Header;
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Icons = function (_React$Component) {
+  _inherits(Icons, _React$Component);
+
+  function Icons(props) {
+    _classCallCheck(this, Icons);
+
+    return _possibleConstructorReturn(this, (Icons.__proto__ || Object.getPrototypeOf(Icons)).call(this, props));
+  }
+
+  _createClass(Icons, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "icons" },
+        _react2.default.createElement(
+          "div",
+          { className: "container" },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/" },
+            _react2.default.createElement(
+              "div",
+              { className: "logo" },
+              _react2.default.createElement("img", { src: "images/logo.png" })
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "searchIcons" },
+            _react2.default.createElement(
+              "div",
+              { className: "herbariumLink" },
+              _react2.default.createElement(
+                "a",
+                { href: "https://www.peruwianskieziola.pl/DefaultHerbar", target: "_blank" },
+                _react2.default.createElement("img", { src: "images/herbarium.png" }),
+                _react2.default.createElement(
+                  "div",
+                  null,
+                  "ZIELNIK"
+                )
+              )
+            ),
+            _react2.default.createElement("img", { id: "searchIcon", src: "images/search.png", onClick: this.props.showAndHideSearcher }),
+            _react2.default.createElement("img", { id: "menuIcon", src: "images/menu.png", onClick: this.props.showAndHideMenu })
+          )
+        )
+      );
+    }
+  }]);
+
+  return Icons;
+}(_react2.default.Component);
+
+exports.default = Icons;
+
+/***/ }),
 /* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14178,7 +15482,125 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(20);
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Nav = function (_React$Component) {
+  _inherits(Nav, _React$Component);
+
+  function Nav(props) {
+    _classCallCheck(this, Nav);
+
+    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
+  }
+
+  _createClass(Nav, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "nav",
+        null,
+        _react2.default.createElement(
+          "ul",
+          { className: "menu", style: { display: this.props.display } },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "Start"
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/suszone-ziola", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "Suszone zio\u0142a"
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/maka", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "Maka"
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/ekstrakty", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "Ekstrakty z zi\xF3\u0142"
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/superfoods", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "Super foods"
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/about", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "O sklepie"
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: "/contact", activeClassName: "activeLink" },
+            _react2.default.createElement(
+              "li",
+              null,
+              "Kontakt"
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Nav;
+}(_react2.default.Component);
+
+exports.default = Nav;
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
 
 var _template = __webpack_require__(132);
 
@@ -14188,39 +15610,39 @@ var _templateProduct = __webpack_require__(133);
 
 var _templateProduct2 = _interopRequireDefault(_templateProduct);
 
-var _mainPage = __webpack_require__(268);
+var _mainPage = __webpack_require__(75);
 
 var _mainPage2 = _interopRequireDefault(_mainPage);
 
-var _suszoneZiola = __webpack_require__(272);
+var _suszoneZiola = __webpack_require__(79);
 
 var _suszoneZiola2 = _interopRequireDefault(_suszoneZiola);
 
-var _maka = __webpack_require__(269);
+var _maka = __webpack_require__(76);
 
 var _maka2 = _interopRequireDefault(_maka);
 
-var _ekstrakty = __webpack_require__(267);
+var _ekstrakty = __webpack_require__(74);
 
 var _ekstrakty2 = _interopRequireDefault(_ekstrakty);
 
-var _superfoods = __webpack_require__(271);
+var _superfoods = __webpack_require__(78);
 
 var _superfoods2 = _interopRequireDefault(_superfoods);
 
-var _aboutShop = __webpack_require__(264);
+var _aboutShop = __webpack_require__(72);
 
 var _aboutShop2 = _interopRequireDefault(_aboutShop);
 
-var _contact = __webpack_require__(265);
+var _contact = __webpack_require__(73);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _notFound = __webpack_require__(270);
+var _notFound = __webpack_require__(77);
 
 var _notFound2 = _interopRequireDefault(_notFound);
 
-var _eachProduct = __webpack_require__(266);
+var _eachProduct = __webpack_require__(126);
 
 var _eachProduct2 = _interopRequireDefault(_eachProduct);
 
@@ -14289,7 +15711,6 @@ var Main = function (_React$Component) {
 exports.default = Main;
 
 /***/ }),
-/* 131 */,
 /* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14306,51 +15727,51 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(261);
+var _header = __webpack_require__(128);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _icons = __webpack_require__(260);
+var _icons = __webpack_require__(129);
 
 var _icons2 = _interopRequireDefault(_icons);
 
-var _nav = __webpack_require__(262);
+var _nav = __webpack_require__(130);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _footer = __webpack_require__(263);
+var _footer = __webpack_require__(127);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _mainPage = __webpack_require__(268);
+var _mainPage = __webpack_require__(75);
 
 var _mainPage2 = _interopRequireDefault(_mainPage);
 
-var _suszoneZiola = __webpack_require__(272);
+var _suszoneZiola = __webpack_require__(79);
 
 var _suszoneZiola2 = _interopRequireDefault(_suszoneZiola);
 
-var _maka = __webpack_require__(269);
+var _maka = __webpack_require__(76);
 
 var _maka2 = _interopRequireDefault(_maka);
 
-var _ekstrakty = __webpack_require__(267);
+var _ekstrakty = __webpack_require__(74);
 
 var _ekstrakty2 = _interopRequireDefault(_ekstrakty);
 
-var _superfoods = __webpack_require__(271);
+var _superfoods = __webpack_require__(78);
 
 var _superfoods2 = _interopRequireDefault(_superfoods);
 
-var _aboutShop = __webpack_require__(264);
+var _aboutShop = __webpack_require__(72);
 
 var _aboutShop2 = _interopRequireDefault(_aboutShop);
 
-var _contact = __webpack_require__(265);
+var _contact = __webpack_require__(73);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _notFound = __webpack_require__(270);
+var _notFound = __webpack_require__(77);
 
 var _notFound2 = _interopRequireDefault(_notFound);
 
@@ -15295,7 +16716,7 @@ var _DOMUtils = __webpack_require__(38);
 
 var _DOMStateStorage = __webpack_require__(84);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15430,7 +16851,7 @@ Object.defineProperty(exports, 'go', {
 
 var _LocationUtils = __webpack_require__(24);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var getCurrentLocation = exports.getCurrentLocation = function getCurrentLocation() {
   return (0, _LocationUtils.createLocation)(window.location);
@@ -15721,7 +17142,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(24);
 
-var _PathUtils = __webpack_require__(17);
+var _PathUtils = __webpack_require__(18);
 
 var _createHistory = __webpack_require__(49);
 
@@ -17576,7 +18997,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -19032,7 +20453,7 @@ var AutoFocusUtils = __webpack_require__(160);
 var CSSPropertyOperations = __webpack_require__(162);
 var DOMLazyTree = __webpack_require__(25);
 var DOMNamespaces = __webpack_require__(53);
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var DOMPropertyOperations = __webpack_require__(91);
 var EventPluginHub = __webpack_require__(31);
 var EventPluginRegistry = __webpack_require__(39);
@@ -20490,7 +21911,7 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var ReactComponentTreeHook = __webpack_require__(9);
 
 var warning = __webpack_require__(2);
@@ -21445,7 +22866,7 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var EventPluginRegistry = __webpack_require__(39);
 var ReactComponentTreeHook = __webpack_require__(9);
 
@@ -22339,7 +23760,7 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(19);
 var EventPluginHub = __webpack_require__(31);
 var EventPluginUtils = __webpack_require__(54);
 var ReactComponentEnvironment = __webpack_require__(57);
@@ -25606,7 +27027,7 @@ var IndexRedirect = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(35);
 
 
@@ -25662,7 +27083,7 @@ var IndexRoute = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__InternalPropTypes__ = __webpack_require__(35);
 
 
@@ -25721,7 +27142,7 @@ var Route = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RouterContext__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__RouteUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouterUtils__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routerWarning__ = __webpack_require__(28);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -26426,7 +27847,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RouterUtils__ = __webpack_require__(114);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -26495,7 +27916,7 @@ function match(_ref, callback) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PromiseUtils__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PatternUtils__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routerWarning__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(20);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -27830,1440 +29251,6 @@ module.exports = function (str) {
 __webpack_require__(125);
 module.exports = __webpack_require__(124);
 
-
-/***/ }),
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Icons = function (_React$Component) {
-  _inherits(Icons, _React$Component);
-
-  function Icons(props) {
-    _classCallCheck(this, Icons);
-
-    return _possibleConstructorReturn(this, (Icons.__proto__ || Object.getPrototypeOf(Icons)).call(this, props));
-  }
-
-  _createClass(Icons, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "icons" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/" },
-            _react2.default.createElement(
-              "div",
-              { className: "logo" },
-              _react2.default.createElement("img", { src: "images/logo.png" })
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "searchIcons" },
-            _react2.default.createElement(
-              "div",
-              { className: "herbariumLink" },
-              _react2.default.createElement(
-                "a",
-                { href: "https://www.peruwianskieziola.pl/DefaultHerbar", target: "_blank" },
-                _react2.default.createElement("img", { src: "images/herbarium.png" }),
-                _react2.default.createElement(
-                  "div",
-                  null,
-                  "ZIELNIK"
-                )
-              )
-            ),
-            _react2.default.createElement("img", { id: "searchIcon", src: "images/search.png", onClick: this.props.showAndHideSearcher }),
-            _react2.default.createElement("img", { id: "menuIcon", src: "images/menu.png", onClick: this.props.showAndHideMenu })
-          )
-        )
-      );
-    }
-  }]);
-
-  return Icons;
-}(_react2.default.Component);
-
-exports.default = Icons;
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Header = function (_React$Component) {
-  _inherits(Header, _React$Component);
-
-  function Header(props) {
-    _classCallCheck(this, Header);
-
-    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
-  }
-
-  _createClass(Header, [{
-    key: "render",
-    value: function render() {
-      var path = this.props.link;
-      return _react2.default.createElement(
-        "header",
-        null,
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          _react2.default.createElement(
-            "div",
-            { className: "row" },
-            _react2.default.createElement("div", { className: "fb-like", "data-href": "...", "data-layout": "button_count", "data-action": "like", "data-size": "large", "data-show-faces": "false", "data-share": "true" })
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "row" },
-            _react2.default.createElement(
-              "div",
-              { className: "searcher", style: { display: this.props.display } },
-              _react2.default.createElement(
-                "form",
-                { className: "search" },
-                _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie...", onChange: this.props.getText }),
-                _react2.default.createElement(
-                  _reactRouter.IndexLink,
-                  { to: path },
-                  _react2.default.createElement("input", { type: "submit", value: "Szukaj" })
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Header;
-}(_react2.default.Component);
-
-exports.default = Header;
-
-/***/ }),
-/* 262 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Nav = function (_React$Component) {
-  _inherits(Nav, _React$Component);
-
-  function Nav(props) {
-    _classCallCheck(this, Nav);
-
-    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
-  }
-
-  _createClass(Nav, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "nav",
-        null,
-        _react2.default.createElement(
-          "ul",
-          { className: "menu", style: { display: this.props.display } },
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "Start"
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/suszone-ziola", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "Suszone zio\u0142a"
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/maka", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "Maka"
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/ekstrakty", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "Ekstrakty z zi\xF3\u0142"
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/superfoods", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "Super foods"
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/about", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "O sklepie"
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: "/contact", activeClassName: "activeLink" },
-            _react2.default.createElement(
-              "li",
-              null,
-              "Kontakt"
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Nav;
-}(_react2.default.Component);
-
-exports.default = Nav;
-
-/***/ }),
-/* 263 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Footer = function (_React$Component) {
-  _inherits(Footer, _React$Component);
-
-  function Footer() {
-    _classCallCheck(this, Footer);
-
-    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-  }
-
-  _createClass(Footer, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "footer",
-        null,
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          _react2.default.createElement(
-            "div",
-            { className: "contact" },
-            _react2.default.createElement(
-              "span",
-              null,
-              "Copyright \xA9 2017. peruwianskiedary.pl"
-            ),
-            _react2.default.createElement(
-              "span",
-              null,
-              "odnowa.jedzeniowa@gmail.com"
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Footer;
-}(_react2.default.Component);
-
-exports.default = Footer;
-
-/***/ }),
-/* 264 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AboutShop = function (_React$Component) {
-  _inherits(AboutShop, _React$Component);
-
-  function AboutShop() {
-    _classCallCheck(this, AboutShop);
-
-    return _possibleConstructorReturn(this, (AboutShop.__proto__ || Object.getPrototypeOf(AboutShop)).apply(this, arguments));
-  }
-
-  _createClass(AboutShop, [{
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
-      return _react2.default.createElement(
-        'div',
-        { className: 'aboutShop' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'h2',
-            null,
-            'O SKLEPIE'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'W\u0142a\u015Bcicielem sklepu jest czeska firma Uncaria \u010CR ( rok za\u0142o\u017Cenia 2001) zajmuj\u0105ca si\u0119  ju\u017C od 14 lat sprowadzaniem naturalnych  skarb\xF3w przyrody -  zio\u0142 prosto z andyjskiej i amazo\u0144skiej  naturalnej apteki, dar\xF3w peruwia\u0144skich ogrod\xF3w, superfoods, Bio Organic i Wild.'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Sklep jest skonstruowany w j\u0119zyku polskim  jako odpowied\u017A na liczne Pa\u0144stwa pro\u015Bby o jego za\u0142o\u017Cenie kierowane pod czeskim adresem. '
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Magazyn wspomnianych wspania\u0142o\u015Bci znajduje si\u0119 w Czechach, czyli mimo \u017Ce sklep internetowy  znajduje si\u0119 na polskich stronach to zakup jest de facto dokonywany w Czechach, sk\u0105d po z\u0142o\u017Ceniu zam\xF3wienia i wybraniu sposobu zap\u0142aty paczka zostanie bezw\u0142ocznie wys\u0142ana.'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Chc\u0105c ograniczy\u0107 w jak najwi\u0119kszym stopniu koszty ponoszone przez Pa\u0144stwo:'
-          ),
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              'za\u0142o\u017Cyli\u015Bmy nasze konto w polskim Banku ING (oszcz\u0119dzaj\u0105c wysokich koszt\xF3w przelewu do czeskiego banku)'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              'wysy\u0142k\u0119 za po\u015Brednictwem kuriera  PPL / DHL ( w Polsce DHL)'
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Paczka  z Czech powinna dotrze\u0107 do Pa\u0144stwa najdalej do 5 dni. O nadaniu paczki zostaniecie Pa\u0144stwo powiadomieni e -mailem.'
-          ),
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              'Koszty wysy\u0142ki pokrywa Zamawiaj\u0105cy.'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              'Koszt ten wynosi 27,00 PLN '
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              'Przy zam\xF3wieniu na ponad 250,00  PLN - koszt wysy\u0142ki pokrywa  firma Uncaria \u010CR.'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              'Podane wy\u017Cej koszty dotycz\u0105 tylko wysy\u0142ki na teren Polski.'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              'W przypadku wysy\u0142ki do innego kraju prosimy o kontakt w celu ustalenia koszt\xF3w.'
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'SERDECZNIE ZAPRASZAMY NA WYGODNE ZAKUPY W POLSKICH CENACH Z WYSY\u0141K\u0104 Z CZESKIEJ REPUBLIKI.'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Cieszymy si\u0119, \u017Ce mo\u017Cemy by\u0107 bli\u017Cej Was!'
-          )
-        )
-      );
-    }
-  }]);
-
-  return AboutShop;
-}(_react2.default.Component);
-
-exports.default = AboutShop;
-
-/***/ }),
-/* 265 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Contact = function (_React$Component) {
-  _inherits(Contact, _React$Component);
-
-  function Contact() {
-    _classCallCheck(this, Contact);
-
-    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
-  }
-
-  _createClass(Contact, [{
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b1.jpg)";
-      return _react2.default.createElement(
-        'div',
-        { className: 'contact' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'data' },
-            _react2.default.createElement(
-              'h2',
-              null,
-              'Kontakt'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'info' },
-              _react2.default.createElement(
-                'div',
-                { className: 'left' },
-                _react2.default.createElement('img', { className: 'icon home', src: 'images/home.jpg' }),
-                _react2.default.createElement('img', { className: 'icon tel', src: 'images/tel.jpg' }),
-                _react2.default.createElement('img', { className: 'icon email', src: 'images/email.jpg' })
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'right' },
-                _react2.default.createElement('hr', null),
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Adres:'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'UNCARIA \u010CR, s.r.o'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Smetanova 3'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  '466 01 JABLONEC n/NISOU'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  '\u010CESKA REPUBLIKA'
-                ),
-                _react2.default.createElement('hr', null),
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Telefon:'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Uncaria \u010CR - 00 420 483 330 600'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'PL - 783 777 080'
-                ),
-                _react2.default.createElement('hr', null),
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'E-mail:'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'odnowa.jedzeniowa@gmail.com'
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Contact;
-}(_react2.default.Component);
-
-exports.default = Contact;
-
-/***/ }),
-/* 266 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var EachProduct = function (_React$Component) {
-  _inherits(EachProduct, _React$Component);
-
-  function EachProduct(props) {
-    _classCallCheck(this, EachProduct);
-
-    var _this = _possibleConstructorReturn(this, (EachProduct.__proto__ || Object.getPrototypeOf(EachProduct)).call(this, props));
-
-    _this.state = {
-      product: []
-    };
-    return _this;
-  }
-
-  _createClass(EachProduct, [{
-    key: "getProductInfo",
-    value: function getProductInfo() {
-      var _this2 = this;
-
-      var productLink = "https://www.peruwianskiedary.pl/categories/products/" + this.props.params.id;
-      fetch(productLink).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          product: data
-        });
-      });
-    }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.getProductInfo();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var eachProduct = _react2.default.createElement(
-        "div",
-        { className: "product" },
-        _react2.default.createElement(
-          "h1",
-          null,
-          this.state.product.name
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "imageDescription" },
-          _react2.default.createElement("div", { className: "productImage", style: { backgroundImage: "url(https://www.peruwianskiedary.pl" + this.state.product.imageUrl + ")" } }),
-          _react2.default.createElement(
-            "div",
-            { className: "productDescription" },
-            _react2.default.createElement(
-              "h2",
-              null,
-              "OPIS"
-            ),
-            _react2.default.createElement(
-              "div",
-              null,
-              this.state.product.description
-            )
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "ingredients" },
-          _react2.default.createElement(
-            "h3",
-            null,
-            "Sk\u0142adniki"
-          ),
-          _react2.default.createElement(
-            "div",
-            null,
-            this.state.product.ingredients
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "preparation" },
-          _react2.default.createElement(
-            "h3",
-            null,
-            "Spos\xF3b przygotowania"
-          ),
-          _react2.default.createElement(
-            "div",
-            null,
-            this.state.product.preparation
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "comentary" },
-          _react2.default.createElement(
-            "h3",
-            null,
-            "Kr\xF3tki komentarz"
-          ),
-          _react2.default.createElement(
-            "div",
-            null,
-            this.state.product.comments !== null ? this.state.product.comments : 'Brak komentarza'
-          )
-        ),
-        _react2.default.createElement(
-          "a",
-          { href: this.state.product.link, target: "_blank" },
-          _react2.default.createElement(
-            "button",
-            null,
-            "Kup teraz"
-          )
-        )
-      );
-      return _react2.default.createElement(
-        "section",
-        { className: "eachProduct" },
-        _react2.default.createElement(
-          "div",
-          { className: "container" },
-          eachProduct
-        )
-      );
-    }
-  }]);
-
-  return EachProduct;
-}(_react2.default.Component);
-
-exports.default = EachProduct;
-
-/***/ }),
-/* 267 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Ekstrakty = function (_React$Component) {
-  _inherits(Ekstrakty, _React$Component);
-
-  function Ekstrakty(props) {
-    _classCallCheck(this, Ekstrakty);
-
-    var _this = _possibleConstructorReturn(this, (Ekstrakty.__proto__ || Object.getPrototypeOf(Ekstrakty)).call(this, props));
-
-    _this.state = {
-      products: []
-    };
-    return _this;
-  }
-
-  _createClass(Ekstrakty, [{
-    key: 'getProductsData',
-    value: function getProductsData() {
-      var _this2 = this;
-
-      var link = 'https://www.peruwianskiedary.pl/categories/3/products';
-      fetch(link).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          products: data
-        });
-      });
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getProductsData();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
-      var products = this.state.products.map(function (elem) {
-        var product_path = '/ekstrakty/' + elem.id;
-        return _react2.default.createElement(
-          'div',
-          { key: elem.id, className: 'products' },
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: product_path },
-            _react2.default.createElement(
-              'h2',
-              null,
-              elem.name,
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'flip-container' },
-              _react2.default.createElement(
-                'div',
-                { className: 'flipper' },
-                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'product_back' },
-                  elem.shortDescription
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: elem.link, target: '_blank' },
-            _react2.default.createElement(
-              'button',
-              null,
-              'Kup teraz'
-            )
-          )
-        );
-      });
-      return _react2.default.createElement(
-        'div',
-        { className: 'listOfProducts' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          products
-        )
-      );
-    }
-  }]);
-
-  return Ekstrakty;
-}(_react2.default.Component);
-
-exports.default = Ekstrakty;
-
-/***/ }),
-/* 268 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MainPage = function (_React$Component) {
-  _inherits(MainPage, _React$Component);
-
-  function MainPage() {
-    _classCallCheck(this, MainPage);
-
-    return _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).apply(this, arguments));
-  }
-
-  _createClass(MainPage, [{
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
-      return _react2.default.createElement(
-        'div',
-        { className: 'mainPage' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'section',
-            { className: 'banner' },
-            _react2.default.createElement(
-              'h1',
-              null,
-              'Witaj na stronie po\u015Bwi\u0119conej produktom  pochodz\u0105cym z czystej, dziewiczej, peruwia\u0144skiej przyrody. '
-            )
-          ),
-          _react2.default.createElement(
-            'section',
-            { className: 'welcomeText' },
-            _react2.default.createElement(
-              'div',
-              { className: 'paragraphs' },
-              _react2.default.createElement(
-                'p',
-                null,
-                'Na stronie znajdziesz przydatne informacje, opisy i zastosowanie niekt\xF3rych zi\xF3\u0142 i \u017Cywno\u015Bci \u2013 wszystko po to, by da\u0107 Ci mo\u017Cliwo\u015B\u0107 poznania i przyjrzenia si\u0119 nieocenionym darom natury i wykorzystania ich w \u017Cywieniu czy leczeniu. Po szersze informacje zapraszam Ci\u0119 do zielnika.'
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                'Po klikni\u0119ciu na ikonk\u0119 kup teraz zostaniesz przekierowany na stron\u0119 sklepu czeskiej firmy Uncaria CR, z kt\xF3r\u0105 wsp\xF3\u0142pracuj\u0119 przy propagowaniu kultury i wytwor\xF3w potomk\xF3w Ink\xF3w oraz lud\xF3w Amazonii. Kupuj\u0105c wpisz kod \u201Emedea\u201D a dostaniesz rabat. W sklepie znajdziesz mi\u0119dzy innymi unikalne m\u0105czki z canihua, peruwia\u0144skiego bobu czy kiwicha, najlepszej jako\u015Bci olej sacha inchi, suszony sok z trzciny cukrowej oraz przepyszne algarrobo.'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return MainPage;
-}(_react2.default.Component);
-
-exports.default = MainPage;
-
-/***/ }),
-/* 269 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Maka = function (_React$Component) {
-  _inherits(Maka, _React$Component);
-
-  function Maka(props) {
-    _classCallCheck(this, Maka);
-
-    var _this = _possibleConstructorReturn(this, (Maka.__proto__ || Object.getPrototypeOf(Maka)).call(this, props));
-
-    _this.state = {
-      products: []
-    };
-    return _this;
-  }
-
-  _createClass(Maka, [{
-    key: 'getProductsData',
-    value: function getProductsData() {
-      var _this2 = this;
-
-      var link = 'https://www.peruwianskiedary.pl/categories/2/products';
-      fetch(link).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          products: data
-        });
-      });
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getProductsData();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
-      var products = this.state.products.map(function (elem) {
-        var product_path = '/maka/' + elem.id;
-        return _react2.default.createElement(
-          'div',
-          { key: elem.id, className: 'products' },
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: product_path },
-            _react2.default.createElement(
-              'h2',
-              null,
-              elem.name,
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'flip-container' },
-              _react2.default.createElement(
-                'div',
-                { className: 'flipper' },
-                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'product_back' },
-                  elem.shortDescription
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: elem.link, target: '_blank' },
-            _react2.default.createElement(
-              'button',
-              null,
-              'Kup teraz'
-            )
-          )
-        );
-      });
-      return _react2.default.createElement(
-        'div',
-        { className: 'listOfProducts' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          products
-        )
-      );
-    }
-  }]);
-
-  return Maka;
-}(_react2.default.Component);
-
-exports.default = Maka;
-
-/***/ }),
-/* 270 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var NotFound = function (_React$Component) {
-  _inherits(NotFound, _React$Component);
-
-  function NotFound() {
-    _classCallCheck(this, NotFound);
-
-    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
-  }
-
-  _createClass(NotFound, [{
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/b.jpg)";
-      return _react2.default.createElement(
-        'div',
-        { className: 'notFound' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'h1',
-            null,
-            'Uuuups! ',
-            _react2.default.createElement('br', null),
-            'Error 404'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'Page not found'
-          )
-        )
-      );
-    }
-  }]);
-
-  return NotFound;
-}(_react2.default.Component);
-
-exports.default = NotFound;
-
-/***/ }),
-/* 271 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SuperFoods = function (_React$Component) {
-  _inherits(SuperFoods, _React$Component);
-
-  function SuperFoods(props) {
-    _classCallCheck(this, SuperFoods);
-
-    var _this = _possibleConstructorReturn(this, (SuperFoods.__proto__ || Object.getPrototypeOf(SuperFoods)).call(this, props));
-
-    _this.state = {
-      products: []
-    };
-    return _this;
-  }
-
-  _createClass(SuperFoods, [{
-    key: 'getProductsData',
-    value: function getProductsData() {
-      var _this2 = this;
-
-      var link = 'https://www.peruwianskiedary.pl/categories/4/products';
-      fetch(link).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          products: data
-        });
-      });
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getProductsData();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
-      var products = this.state.products.map(function (elem) {
-        var product_path = '/superfoods/' + elem.id;
-        return _react2.default.createElement(
-          'div',
-          { key: elem.id, className: 'products' },
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: product_path },
-            _react2.default.createElement(
-              'h2',
-              null,
-              elem.name,
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'flip-container' },
-              _react2.default.createElement(
-                'div',
-                { className: 'flipper' },
-                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'product_back' },
-                  elem.shortDescription
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: elem.link, target: '_blank' },
-            _react2.default.createElement(
-              'button',
-              null,
-              'Kup teraz'
-            )
-          )
-        );
-      });
-      return _react2.default.createElement(
-        'div',
-        { className: 'listOfProducts' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          products
-        )
-      );
-    }
-  }]);
-
-  return SuperFoods;
-}(_react2.default.Component);
-
-exports.default = SuperFoods;
-
-/***/ }),
-/* 272 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(20);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SuszoneZiola = function (_React$Component) {
-  _inherits(SuszoneZiola, _React$Component);
-
-  function SuszoneZiola(props) {
-    _classCallCheck(this, SuszoneZiola);
-
-    var _this = _possibleConstructorReturn(this, (SuszoneZiola.__proto__ || Object.getPrototypeOf(SuszoneZiola)).call(this, props));
-
-    _this.state = {
-      products: []
-    };
-    return _this;
-  }
-
-  _createClass(SuszoneZiola, [{
-    key: 'getProductsData',
-    value: function getProductsData() {
-      var _this2 = this;
-
-      var link = 'https://www.peruwianskiedary.pl/categories/1/products';
-      fetch(link).then(function (resp) {
-        return resp.json();
-      }).then(function (data) {
-        _this2.setState({
-          products: data
-        });
-      });
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getProductsData();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/background.jpg)";
-      var products = this.state.products.map(function (elem) {
-        var product_path = '/suszone-ziola/' + elem.id;
-        return _react2.default.createElement(
-          'div',
-          { key: elem.id, className: 'products' },
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: product_path },
-            _react2.default.createElement(
-              'h2',
-              null,
-              elem.name,
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
-                'p',
-                null,
-                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'flip-container' },
-              _react2.default.createElement(
-                'div',
-                { className: 'flipper' },
-                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'product_back' },
-                  elem.shortDescription
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'a',
-            { href: elem.link, target: '_blank' },
-            _react2.default.createElement(
-              'button',
-              null,
-              'Kup teraz'
-            )
-          )
-        );
-      });
-      return _react2.default.createElement(
-        'div',
-        { className: 'listOfProducts' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          products
-        )
-      );
-    }
-  }]);
-
-  return SuszoneZiola;
-}(_react2.default.Component);
-
-exports.default = SuszoneZiola;
 
 /***/ })
 /******/ ]);

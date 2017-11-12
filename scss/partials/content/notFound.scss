@@ -3,8 +3,9 @@
   display: flex;
   justify-content: center;
   .container {
-    background-image: url(../images/product_background_sample.png);
+    background-image: url(../images/Fotolia_143931382_M.png);
     background-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@
 
     @media(min-width: 768px) {
       width: 80%;
+      background-size: 50% 75%;
     }
   }
 }

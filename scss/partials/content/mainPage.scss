@@ -35,7 +35,6 @@
         }
       }
     }
-
     .welcomeText {
       display: flex;
       justify-content: center;
@@ -44,16 +43,11 @@
         width: 80%;
       }
       .paragraphs {
-
         border-radius: 15px;
-        background-image: url(../images/product_background_sample.png);
+        background-image: url(../images/Fotolia_143931382_M.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         padding: 80px 0px 60px 0px;
-        // display: flex;
-        // align-items: center;
-        // flex-direction: column;
-        // justify-content: center;
         p {
           font-family: 'Caveat Brush', cursive;
           color: black;
@@ -62,12 +56,6 @@
           padding: 5px 30px 5px 30px;
           font-size: 1.3em;
         }
-        // @media(min-width: 420px){
-        //   font-size: 1.2em;
-        // }
-        // @media(min-width: 520px){
-        //   font-size: 1.3em;
-        // }
         @media(min-width: 768px){
           font-size: 1.1em;
           min-height: 75vh;
