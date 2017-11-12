@@ -25,7 +25,7 @@ class Ekstrakty extends React.Component {
   }
   render(){
     let app = document.getElementById('app');
-    app.style.backgroundImage	=	"url(images/backgroundTra.jpg)";
+    app.style.backgroundImage	=	"url(images/Fotolia_69824599_L.jpg)";
     const products = this.state.products.map(elem => {
       const product_path = `/ekstrakty/${elem.id}`;
       return (

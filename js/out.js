@@ -8510,7 +8510,7 @@ var Ekstrakty = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/ekstrakty/' + elem.id;
         return _react2.default.createElement(
@@ -8719,7 +8719,7 @@ var Maka = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/maka/' + elem.id;
         return _react2.default.createElement(
@@ -8915,7 +8915,7 @@ var SuperFoods = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/backgroundTra.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/superfoods/' + elem.id;
         return _react2.default.createElement(
@@ -9042,7 +9042,7 @@ var SuszoneZiola = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/background.jpg)";
+      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
       var products = this.state.products.map(function (elem) {
         var product_path = '/suszone-ziola/' + elem.id;
         return _react2.default.createElement(
