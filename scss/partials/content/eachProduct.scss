@@ -32,10 +32,6 @@
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  @media(min-width: 580px) {
-    padding: 50px 50px 30px 50px;
-  }
-
   h1 {
     text-align: center;
     min-width: 30vh;
@@ -62,6 +58,7 @@
       min-height: 200px;
       background-color: rgba(255, 255, 255, 0.5);
       border: 2px solid #00724A;
+      font-size: 0.8em;
       h2 {
         background-color: #00724A;
       }
@@ -77,6 +74,7 @@
     align-items: center;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
     h3 {
       background-color: #00724A;
       width: 100%;
@@ -94,6 +92,7 @@
     align-items: center;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
     h3 {
       background-color: #00724A;
       width: 100%;
@@ -111,6 +110,7 @@
     align-items: center;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
     h3 {
       background-color: #00724A;
       width: 100%;
@@ -132,33 +132,23 @@
     padding: 10px;
     margin-top: 10px;
   }
+
   @media(min-width: 580px) {
-    // .imageDescription {
-    //   flex-direction: row;
-    //   justify-content: space-around;
-    //   align-items: flex-start;
-    //   .productImage {
-    //     margin-bottom: 10px;
-    //     width: 250px;
-    //     height: 250px;
-    //     background-position: center;
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     border: 1px solid black;
-    //     border-radius: 5px;
-    //   }
-    //   .productDescription {
-    //     text-align: center;
-    //     width: 50%;
-    //     margin: 0 0;
-    //   }
-    // }
-    // .comentary {
-    //   text-align: center;
-    //   display: block;
-    //   width: 100%;
-    //   margin-bottom: 15px;
-    // }
+    padding: 50px 50px 30px 50px;
+    .imageDescription {
+      .productDescription {
+        font-size: 1em;
+      }
+    }
+    .ingredients {
+      font-size: 1em;
+    }
+    .preparation {
+      font-size: 1em;
+    }
+    .comentary {
+      font-size: 1em;
+    }
   }
 
   @media(min-width: 900px){
