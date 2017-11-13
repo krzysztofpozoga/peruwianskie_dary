@@ -63,6 +63,14 @@
           font-size: 1.1em;
           min-height: 75vh;
         }
+        @media(min-width: 920px){
+          font-size: 1.2em;
+          min-height: 75vh;
+        }
+        @media(min-width: 1366px){
+          font-size: 1.45em;
+          min-height: 75vh;
+        }
       }
     }
   }

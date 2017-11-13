@@ -26,13 +26,21 @@
       margin-bottom: 5px;
       text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
       text-align: justify;
-      font-size: 1.2em;
+      font-size: 0.8em;
     }
     ul {
       margin: 0 0 5px 15px;
       text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
       text-align: justify;
-      font-size: 1.2em;
+      font-size: 0.8em;
+    }
+    @media(min-width: 580px) {
+      p {
+        font-size: 1em;
+      }
+      ul {
+        font-size: 1em;
+      }
     }
     @media(min-width: 768px) {
       width: 80%;
@@ -40,6 +48,22 @@
       padding: 45px;
       h2 {
         margin: 0px 0 15px 0;
+      }
+    }
+    @media(min-width: 920px) {
+      p {
+        font-size: 1.1em;
+      }
+      ul {
+        font-size: 1.1em;
+      }
+    }
+    @media(min-width: 1366px) {
+      p {
+        font-size: 1.4em;
+      }
+      ul {
+        font-size: 1.4em;
       }
     }
   }
