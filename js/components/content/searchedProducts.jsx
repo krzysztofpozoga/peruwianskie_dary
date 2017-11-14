@@ -29,6 +29,9 @@ class SearchedProducts extends React.Component {
   }
 
   render(){
+    if (window.innerWidth >= 768) {
+      app.style.backgroundImage	=	"url(images/Fotolia_69824599_L.jpg)";
+    }
     const products = this.state.products.map(elem => {
       const product_path = `/search/${elem.id}`;
       return (

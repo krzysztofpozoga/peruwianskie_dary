@@ -24,6 +24,10 @@ class EachProduct extends React.Component {
   }
 
   render(){
+    let app = document.getElementById('app');
+    if (window.innerWidth >= 768) {
+      app.style.backgroundImage	=	"url(images/Fotolia_69824599_L.jpg)";
+    }
     const eachProduct = (
       <div className="product">
         <h1>{this.state.product.name}</h1>

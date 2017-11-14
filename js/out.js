@@ -8214,7 +8214,9 @@ var AboutShop = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      }
       return _react2.default.createElement(
         'div',
         { className: 'aboutShop' },
@@ -8352,7 +8354,9 @@ var Contact = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      }
       return _react2.default.createElement(
         'div',
         { className: 'contact' },
@@ -8510,7 +8514,9 @@ var Ekstrakty = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      }
       var products = this.state.products.map(function (elem) {
         var product_path = '/ekstrakty/' + elem.id;
         return _react2.default.createElement(
@@ -8611,7 +8617,9 @@ var MainPage = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      }
       return _react2.default.createElement(
         'div',
         { className: 'mainPage' },
@@ -8724,7 +8732,9 @@ var Maka = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      }
       var products = this.state.products.map(function (elem) {
         var product_path = '/maka/' + elem.id;
         return _react2.default.createElement(
@@ -8827,7 +8837,9 @@ var NotFound = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_130262458_L.jpg)";
+      }
       return _react2.default.createElement(
         'div',
         { className: 'notFound' },
@@ -8920,7 +8932,9 @@ var SuperFoods = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      }
       var products = this.state.products.map(function (elem) {
         var product_path = '/superfoods/' + elem.id;
         return _react2.default.createElement(
@@ -9047,7 +9061,9 @@ var SuszoneZiola = function (_React$Component) {
     key: 'render',
     value: function render() {
       var app = document.getElementById('app');
-      app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      }
       var products = this.state.products.map(function (elem) {
         var product_path = '/suszone-ziola/' + elem.id;
         return _react2.default.createElement(
@@ -15123,11 +15139,11 @@ var EachProduct = function (_React$Component) {
   }
 
   _createClass(EachProduct, [{
-    key: "getProductInfo",
+    key: 'getProductInfo',
     value: function getProductInfo() {
       var _this2 = this;
 
-      var productLink = "https://www.peruwianskiedary.pl/categories/products/" + this.props.params.id;
+      var productLink = 'https://www.peruwianskiedary.pl/categories/products/' + this.props.params.id;
       fetch(productLink).then(function (resp) {
         return resp.json();
       }).then(function (data) {
@@ -15137,98 +15153,102 @@ var EachProduct = function (_React$Component) {
       });
     }
   }, {
-    key: "componentDidMount",
+    key: 'componentDidMount',
     value: function componentDidMount() {
       this.getProductInfo();
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
+      var app = document.getElementById('app');
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      }
       var eachProduct = _react2.default.createElement(
-        "div",
-        { className: "product" },
+        'div',
+        { className: 'product' },
         _react2.default.createElement(
-          "h1",
+          'h1',
           null,
           this.state.product.name
         ),
         _react2.default.createElement(
-          "div",
-          { className: "imageDescription" },
-          _react2.default.createElement("div", { className: "productImage", style: { backgroundImage: "url(https://www.peruwianskiedary.pl" + this.state.product.imageUrl + ")" } }),
+          'div',
+          { className: 'imageDescription' },
+          _react2.default.createElement('div', { className: 'productImage', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + this.state.product.imageUrl + ')' } }),
           _react2.default.createElement(
-            "div",
-            { className: "productDescription" },
+            'div',
+            { className: 'productDescription' },
             _react2.default.createElement(
-              "h2",
+              'h2',
               null,
-              "OPIS"
+              'OPIS'
             ),
             _react2.default.createElement(
-              "div",
+              'div',
               null,
               this.state.product.description
             )
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "ingredients" },
+          'div',
+          { className: 'ingredients' },
           _react2.default.createElement(
-            "h3",
+            'h3',
             null,
-            "Sk\u0142adniki"
+            'Sk\u0142adniki'
           ),
           _react2.default.createElement(
-            "div",
+            'div',
             null,
             this.state.product.ingredients
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "preparation" },
+          'div',
+          { className: 'preparation' },
           _react2.default.createElement(
-            "h3",
+            'h3',
             null,
-            "Spos\xF3b przygotowania"
+            'Spos\xF3b przygotowania'
           ),
           _react2.default.createElement(
-            "div",
+            'div',
             null,
             this.state.product.preparation
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "comentary" },
+          'div',
+          { className: 'comentary' },
           _react2.default.createElement(
-            "h3",
+            'h3',
             null,
-            "Kr\xF3tki komentarz"
+            'Kr\xF3tki komentarz'
           ),
           _react2.default.createElement(
-            "div",
+            'div',
             null,
             this.state.product.comments !== null ? this.state.product.comments : 'Brak komentarza'
           )
         ),
         _react2.default.createElement(
-          "a",
-          { href: this.state.product.link, target: "_blank" },
+          'a',
+          { href: this.state.product.link, target: '_blank' },
           _react2.default.createElement(
-            "button",
+            'button',
             null,
-            "Kup teraz"
+            'Kup teraz'
           )
         )
       );
       return _react2.default.createElement(
-        "section",
-        { className: "eachProduct" },
+        'section',
+        { className: 'eachProduct' },
         _react2.default.createElement(
-          "div",
-          { className: "container" },
+          'div',
+          { className: 'container' },
           eachProduct
         )
       );
