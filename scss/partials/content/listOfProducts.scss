@@ -24,7 +24,7 @@
   padding: 10px;
   display: flex;
   min-height: 400px;
-  width: 250px;
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   background-image: url(../images/Fotolia_143931382_M.png);
@@ -45,7 +45,7 @@
     text-align: center;
     min-width: 30vh;
     border-radius: 5px;
-    padding: 0px 15px 10px 15px;
+    padding: 10px 20px 10px 20px;
     text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
     p {
       font-size: 0.6em;
@@ -53,8 +53,8 @@
   }
   .product_front {
     margin-bottom: 10px;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 250px;
+    min-height: 250px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,11 +71,11 @@
   .product_back {
     display: flex;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 1em;
     background-color: white;
     text-align: center;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 250px;
+    min-height: 250px;
     backface-visibility: hidden;
   	position: absolute;
   	top: 0;
@@ -93,6 +93,21 @@
     border-radius: 5px;
     padding: 10px;
   }
+  @media(min-width: 768px) {
+    width: 250px;
+    h2 {
+      padding: 0px 15px 10px 15px;
+    }
+    .product_front {
+      min-width: 200px;
+      min-height: 200px;
+    }
+    .product_back {
+      font-size: 0.8em;
+      min-width: 200px;
+      min-height: 200px;
+    }
+  }
 }
 
 .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -100,8 +115,12 @@
 }
 
 .flip-container {
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 250px;
+  min-height: 250px;
+  @media(min-width: 768px) {
+    min-width: 200px;
+    min-height: 200px;
+  }
 }
 
 .flipper {
