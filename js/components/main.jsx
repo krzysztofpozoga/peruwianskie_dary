@@ -11,6 +11,7 @@ import AboutShop from './content/aboutShop.jsx';
 import Contact from './content/contact.jsx';
 import NotFound from './content/notFound.jsx';
 import EachProduct from './content/eachProduct.jsx';
+import SearchedProducts from './content/searchedProducts.jsx';
 
 class Main extends React.Component {
   render(){
@@ -32,6 +33,10 @@ class Main extends React.Component {
           </Route>
           <Route path="/superfoods" component={TemplateProduct} >
             <IndexRoute component={SuperFoods} />
+            <Route path=":id" component={EachProduct} />
+          </Route>
+          <Route path="/search/:path" component={TemplateProduct} >
+            <IndexRoute component={SearchedProducts} />
             <Route path=":id" component={EachProduct} />
           </Route>
           <Route path="/contact" component={Contact} />

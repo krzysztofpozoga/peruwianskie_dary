@@ -15132,6 +15132,7 @@ var EachProduct = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (EachProduct.__proto__ || Object.getPrototypeOf(EachProduct)).call(this, props));
 
+    console.log(_this.props.params);
     _this.state = {
       product: []
     };
@@ -15366,7 +15367,7 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      var path = this.props.link;
+      var path = "/search/" + this.props.link;
       return _react2.default.createElement(
         "header",
         null,
@@ -15671,6 +15672,10 @@ var _eachProduct = __webpack_require__(126);
 
 var _eachProduct2 = _interopRequireDefault(_eachProduct);
 
+var _searchedProducts = __webpack_require__(260);
+
+var _searchedProducts2 = _interopRequireDefault(_searchedProducts);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -15720,6 +15725,12 @@ var Main = function (_React$Component) {
             _reactRouter.Route,
             { path: '/superfoods', component: _templateProduct2.default },
             _react2.default.createElement(_reactRouter.IndexRoute, { component: _superfoods2.default }),
+            _react2.default.createElement(_reactRouter.Route, { path: ':id', component: _eachProduct2.default })
+          ),
+          _react2.default.createElement(
+            _reactRouter.Route,
+            { path: '/search/:path', component: _templateProduct2.default },
+            _react2.default.createElement(_reactRouter.IndexRoute, { component: _searchedProducts2.default }),
             _react2.default.createElement(_reactRouter.Route, { path: ':id', component: _eachProduct2.default })
           ),
           _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
@@ -15840,37 +15851,41 @@ var Template = function (_React$Component) {
       }
     };
 
+    _this.getText = function (event) {
+      _this.setState({
+        link: event.target.value
+      });
+    };
+
     _this.state = {
       menuDisplay: '',
-      searcherDisplay: ''
+      searcherDisplay: '',
+      link: ''
     };
     return _this;
   }
 
   _createClass(Template, [{
     key: 'render',
-
-
-    // getText = (event) => {
-    //   this.setState({
-    //       searchText: event.target.value
-    //   })
-    // }
-
     value: function render() {
+      var _this2 = this;
+
+      var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
+        return _react2.default.cloneElement(child, { link: _this2.state.link });
+      });
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
           'div',
           { id: 'all' },
-          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.getText, link: this.state.searchText }),
+          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.getText, link: this.state.link }),
           _react2.default.createElement(_icons2.default, { showAndHideMenu: this.showAndHideMenu, showAndHideSearcher: this.showAndHideSearcher }),
           _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay }),
           _react2.default.createElement(
             'div',
             { className: 'content' },
-            this.props.children
+            childrenWithProps
           ),
           _react2.default.createElement(_footer2.default, null)
         )
@@ -15920,10 +15935,15 @@ var TemplateProduct = function (_React$Component) {
   _createClass(TemplateProduct, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var childWithProps = _react2.default.Children.map(this.props.children, function (child) {
+        return _react2.default.cloneElement(child, { link: _this2.props.link });
+      });
       return _react2.default.createElement(
         'div',
         null,
-        this.props.children
+        childWithProps
       );
     }
   }]);
@@ -29276,6 +29296,144 @@ module.exports = function (str) {
 __webpack_require__(125);
 module.exports = __webpack_require__(124);
 
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(17);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SearchedProducts = function (_React$Component) {
+  _inherits(SearchedProducts, _React$Component);
+
+  function SearchedProducts(props) {
+    _classCallCheck(this, SearchedProducts);
+
+    var _this = _possibleConstructorReturn(this, (SearchedProducts.__proto__ || Object.getPrototypeOf(SearchedProducts)).call(this, props));
+
+    _this.state = {
+      products: []
+    };
+    return _this;
+  }
+
+  _createClass(SearchedProducts, [{
+    key: 'getProductsData',
+    value: function getProductsData() {
+      var _this2 = this;
+
+      if (this.props.link != '') {
+        var link = 'https://www.peruwianskiedary.pl/categories/products/search?phrase=' + this.props.link;
+        fetch(link).then(function (resp) {
+          return resp.json();
+        }).then(function (data) {
+          _this2.setState({
+            products: data
+          });
+        });
+      }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getProductsData();
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      this.getProductsData();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this3 = this;
+
+      if (window.innerWidth >= 768) {
+        app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
+      }
+      var path = this.props.link;
+      var products = this.state.products.map(function (elem) {
+        var product_path = '/search/' + _this3.props.link + '/' + elem.id;
+        return _react2.default.createElement(
+          'div',
+          { key: elem.id, className: 'products' },
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: product_path },
+            _react2.default.createElement(
+              'h2',
+              null,
+              elem.name,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                '(kliknij i dowiedz si\u0119 wi\u0119cej)'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'flip-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flipper' },
+                _react2.default.createElement('div', { className: 'product_front', style: { backgroundImage: 'url(https://www.peruwianskiedary.pl' + elem.imageUrl + ')' } }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'product_back' },
+                  elem.shortDescription
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: elem.link, target: '_blank' },
+            _react2.default.createElement(
+              'button',
+              null,
+              'Kup teraz'
+            )
+          )
+        );
+      });
+      return _react2.default.createElement(
+        'div',
+        { className: 'listOfProducts' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          products
+        )
+      );
+    }
+  }]);
+
+  return SearchedProducts;
+}(_react2.default.Component);
+
+exports.default = SearchedProducts;
 
 /***/ })
 /******/ ]);

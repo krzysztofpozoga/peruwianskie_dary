@@ -6,7 +6,7 @@ class Header extends React.Component {
     super(props);
   }
   render(){
-    let path = this.props.link
+    let path = `/search/${this.props.link}`
     return (
       <header>
         <div className="container">

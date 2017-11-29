@@ -17,7 +17,8 @@ class Template extends React.Component {
     super(props);
     this.state = {
       menuDisplay: '',
-      searcherDisplay: ''
+      searcherDisplay: '',
+      link: ''
     }
   }
 
@@ -45,20 +46,22 @@ class Template extends React.Component {
     }
   }
 
-  // getText = (event) => {
-  //   this.setState({
-  //       searchText: event.target.value
-  //   })
-  // }
+  getText = (event) => {
+    this.setState({
+        link: event.target.value
+    })
+  }
 
   render(){
+    let childrenWithProps = React.Children.map(this.props.children, child =>
+      React.cloneElement(child, { link: this.state.link }));
     return (
       <div>
         <div id="all">
-          <Header display={this.state.searcherDisplay} getText={this.getText} link={this.state.searchText}/>
+          <Header display={this.state.searcherDisplay} getText={this.getText} link={this.state.link}/>
           <Icons showAndHideMenu={this.showAndHideMenu} showAndHideSearcher={this.showAndHideSearcher}/>
           <Nav display={this.state.menuDisplay}/>
-          <div className="content">{this.props.children}</div>
+          <div className="content">{childrenWithProps}</div>
           <Footer />
         </div>
       </div>

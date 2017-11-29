@@ -10,14 +10,16 @@ class SearchedProducts extends React.Component {
   }
 
   getProductsData(){
-    const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${this.props.params.path}`;
-    fetch(link)
-    .then(resp => resp.json())
-    .then(data => {
-      this.setState({
-        products: data
+    if (this.props.link != '') {
+      const link = `https://www.peruwianskiedary.pl/categories/products/search?phrase=${this.props.link}`;
+      fetch(link)
+      .then(resp => resp.json())
+      .then(data => {
+        this.setState({
+          products: data
+        })
       })
-    })
+    }
   }
 
   componentDidMount(){
@@ -32,8 +34,9 @@ class SearchedProducts extends React.Component {
     if (window.innerWidth >= 768) {
       app.style.backgroundImage	=	"url(images/Fotolia_69824599_L.jpg)";
     }
+    let path = this.props.link;
     const products = this.state.products.map(elem => {
-      const product_path = `/search/${elem.id}`;
+      const product_path = `/search/${this.props.link}/${elem.id}`;
       return (
         <div key={elem.id} className="products">
           <IndexLink to={product_path}>

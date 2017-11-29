@@ -5,9 +5,11 @@ class TemplateProduct extends React.Component {
     super(props);
   }
   render(){
+    let childWithProps = React.Children.map(this.props.children, child =>
+      React.cloneElement(child, { link: this.props.link }));
     return (
       <div>
-        {this.props.children}
+        {childWithProps}
       </div>
     )
   }

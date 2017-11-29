@@ -11,7 +11,7 @@ header {
       justify-content: flex-end;
       width: 100%;
       @media(min-width: 768px) {
-        display: none;
+        display: flex;
       }
       .search {
         width: 100%;
