@@ -48,7 +48,7 @@ class Template extends React.Component {
 
   getText = (event) => {
     this.setState({
-        link: event.target.value
+        link: event.target.parentElement.previousSibling.value
     })
   }
 
@@ -58,7 +58,7 @@ class Template extends React.Component {
     return (
       <div>
         <div id="all">
-          <Header display={this.state.searcherDisplay} getText={this.getText} link={this.state.link}/>
+          <Header display={this.state.searcherDisplay} getText={this.getText}/>
           <Icons showAndHideMenu={this.showAndHideMenu} showAndHideSearcher={this.showAndHideSearcher}/>
           <Nav display={this.state.menuDisplay}/>
           <div className="content">{childrenWithProps}</div>

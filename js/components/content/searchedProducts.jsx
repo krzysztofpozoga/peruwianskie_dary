@@ -36,7 +36,7 @@ class SearchedProducts extends React.Component {
     }
     let path = this.props.link;
     const products = this.state.products.map(elem => {
-      const product_path = `/search/${this.props.link}/${elem.id}`;
+      const product_path = `/search/${elem.id}`;
       return (
         <div key={elem.id} className="products">
           <IndexLink to={product_path}>
