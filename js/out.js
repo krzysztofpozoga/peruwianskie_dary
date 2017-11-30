@@ -15864,7 +15864,7 @@ var Main = function (_React$Component) {
           ),
           _react2.default.createElement(
             _reactRouter.Route,
-            { path: ':path', component: _templateProduct2.default },
+            { path: 'search', component: _templateProduct2.default },
             _react2.default.createElement(_reactRouter.IndexRoute, { component: _searchedProducts2.default }),
             _react2.default.createElement(_reactRouter.Route, { path: ':id', component: _eachProduct2.default })
           ),
