@@ -50,6 +50,7 @@ class Template extends React.Component {
     this.setState({
         link: event.target.parentElement.previousSibling.value
     })
+    event.target.parentElement.previousSibling.value = ''
   }
 
   render(){

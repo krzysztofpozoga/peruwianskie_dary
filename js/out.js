@@ -15295,6 +15295,7 @@ var SearchedProducts = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (SearchedProducts.__proto__ || Object.getPrototypeOf(SearchedProducts)).call(this, props));
 
+    console.log(_this.props.link);
     _this.state = {
       products: []
     };
@@ -15322,9 +15323,14 @@ var SearchedProducts = function (_React$Component) {
     value: function componentDidMount() {
       this.getProductsData();
     }
+
+    // componentDidUpdate(){
+    //   this.getProductsData();
+    // }
+
   }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate() {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
       this.getProductsData();
     }
   }, {
@@ -15333,7 +15339,6 @@ var SearchedProducts = function (_React$Component) {
       if (window.innerWidth >= 768) {
         app.style.backgroundImage = "url(images/Fotolia_69824599_L.jpg)";
       }
-      var path = this.props.link;
       var products = this.state.products.map(function (elem) {
         var product_path = '/search/' + elem.id;
         return _react2.default.createElement(
@@ -15502,7 +15507,6 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      var path = "/search";
       return _react2.default.createElement(
         "header",
         null,
@@ -15526,7 +15530,7 @@ var Header = function (_React$Component) {
                 _react2.default.createElement("input", { id: "searchText", type: "text", placeholder: "  Wyszukaj na stronie..." }),
                 _react2.default.createElement(
                   _reactRouter.IndexLink,
-                  { to: path },
+                  { to: "/search" },
                   _react2.default.createElement("input", { type: "submit", value: "Szukaj", onClick: this.props.getText })
                 )
               )
@@ -15990,6 +15994,7 @@ var Template = function (_React$Component) {
       _this.setState({
         link: event.target.parentElement.previousSibling.value
       });
+      event.target.parentElement.previousSibling.value = '';
     };
 
     _this.state = {

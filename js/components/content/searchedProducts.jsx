@@ -4,6 +4,7 @@ import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-rou
 class SearchedProducts extends React.Component {
   constructor(props){
     super(props);
+    console.log(this.props.link);
     this.state = {
       products: []
     }
@@ -26,7 +27,11 @@ class SearchedProducts extends React.Component {
     this.getProductsData();
   }
 
-  componentDidUpdate(){
+  // componentDidUpdate(){
+  //   this.getProductsData();
+  // }
+
+  componentWillUnmount(){
     this.getProductsData();
   }
 
@@ -34,7 +39,6 @@ class SearchedProducts extends React.Component {
     if (window.innerWidth >= 768) {
       app.style.backgroundImage	=	"url(images/Fotolia_69824599_L.jpg)";
     }
-    let path = this.props.link;
     const products = this.state.products.map(elem => {
       const product_path = `/search/${elem.id}`;
       return (
