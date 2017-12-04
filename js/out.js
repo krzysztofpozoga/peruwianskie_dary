@@ -15295,7 +15295,7 @@ var SearchedProducts = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (SearchedProducts.__proto__ || Object.getPrototypeOf(SearchedProducts)).call(this, props));
 
-    console.log(_this.props.link);
+    console.log(_this);
     _this.state = {
       products: []
     };
@@ -15323,11 +15323,11 @@ var SearchedProducts = function (_React$Component) {
     value: function componentDidMount() {
       this.getProductsData();
     }
-
-    // componentDidUpdate(){
-    //   this.getProductsData();
-    // }
-
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      this.getProductsData();
+    }
   }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {

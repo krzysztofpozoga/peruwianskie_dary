@@ -4,7 +4,7 @@ import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-rou
 class SearchedProducts extends React.Component {
   constructor(props){
     super(props);
-    console.log(this.props.link);
+    console.log(this);
     this.state = {
       products: []
     }
@@ -27,9 +27,9 @@ class SearchedProducts extends React.Component {
     this.getProductsData();
   }
 
-  // componentDidUpdate(){
-  //   this.getProductsData();
-  // }
+  componentDidUpdate(){
+    this.getProductsData();
+  }
 
   componentWillUnmount(){
     this.getProductsData();
