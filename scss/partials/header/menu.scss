@@ -1,13 +1,14 @@
 nav {
   width: 100%;
   .menu {
-    display: none;
+    z-index: 200;
     list-style-type: none;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
     position: fixed;
+    transition: transform 0.3s ease-out;
     a {
       text-decoration: none;
     }
@@ -57,5 +58,17 @@ nav {
     li{
       color: #00C800;
     }
+  }
+}
+.open {
+  transform: translateX(0);
+  @media(min-width: 768px) {
+    transform: inherit;
+  }
+}
+.close {
+  transform: translateX(-100%);
+  @media(min-width: 768px) {
+    transform: inherit;
   }
 }

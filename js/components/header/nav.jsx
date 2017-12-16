@@ -6,9 +6,13 @@ class Nav extends React.Component {
       super(props);
   }
   render(){
+    let attachedClasses = ['menu', 'close'];
+    if(this.props.display === 'flex'){
+      attachedClasses = ['menu', 'open'];
+    }
     return (
       <nav>
-        <ul className="menu" style={{display: this.props.display}}>
+        <ul className={attachedClasses.join(' ')} style={{display: this.props.display}}>
           <IndexLink to="/" activeClassName="activeLink"><li>Start</li></IndexLink>
           <IndexLink to="/suszone-ziola" activeClassName="activeLink"><li>Suszone zioła</li></IndexLink>
           <IndexLink to="/maka" activeClassName="activeLink"><li>Maka</li></IndexLink>

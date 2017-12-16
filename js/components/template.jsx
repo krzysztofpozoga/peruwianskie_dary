@@ -11,6 +11,7 @@ import SuperFoods from './content/superfoods.jsx';
 import AboutShop from './content/aboutShop.jsx';
 import Contact from './content/contact.jsx';
 import NotFound from './content/notFound.jsx';
+import Backdrop from './header/backdrop.jsx';
 
 class Template extends React.Component {
   constructor(props){
@@ -18,18 +19,30 @@ class Template extends React.Component {
     this.state = {
       menuDisplay: '',
       searcherDisplay: '',
-      link: ''
+      link: '',
+      showBackdrop: false
     }
   }
 
-  showAndHideMenu = (event) => {
+  showMenu = (event) => {
     if (this.state.menuDisplay === '') {
       this.setState({
-        menuDisplay: 'flex'
+        menuDisplay: 'flex',
+        showBackdrop: true
       })
     } else {
       this.setState({
-        menuDisplay: ''
+        menuDisplay: '',
+        showBackdrop: false
+      })
+    }
+  }
+
+  hideMenu = (event) => {
+    if (this.state.menuDisplay === 'flex') {
+      this.setState({
+        menuDisplay: '',
+        showBackdrop: false
       })
     }
   }
@@ -60,7 +73,8 @@ class Template extends React.Component {
       <div>
         <div id="all">
           <Header display={this.state.searcherDisplay} getText={this.getText}/>
-          <Icons showAndHideMenu={this.showAndHideMenu} showAndHideSearcher={this.showAndHideSearcher}/>
+          <Icons showMenu={this.showMenu} showAndHideSearcher={this.showAndHideSearcher}/>
+          <Backdrop show={this.state.showBackdrop} hideMenu={this.hideMenu}/>
           <Nav display={this.state.menuDisplay}/>
           <div className="content">{childrenWithProps}</div>
           <Footer />

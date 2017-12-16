@@ -22,7 +22,7 @@ class Icons extends React.Component {
               </a>
             </div>
             <img id="searchIcon" src="images/search.png" onClick={this.props.showAndHideSearcher}/>
-            <img id="menuIcon" src="images/menu.png" onClick={this.props.showAndHideMenu}/>
+            <img id="menuIcon" src="images/menu.png" onClick={this.props.showMenu}/>
           </div>
         </div>
       </div>
