@@ -5,9 +5,9 @@ nav {
     list-style-type: none;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     width: 100%;
     margin-bottom: 20px;
+    position: fixed;
     a {
       text-decoration: none;
     }
@@ -33,6 +33,7 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      position: inherit;
       li{
         background-color: inherit;
         text-align: center;
