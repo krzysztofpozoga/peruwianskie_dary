@@ -15966,17 +15966,9 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(131);
+var _navigation = __webpack_require__(264);
 
-var _header2 = _interopRequireDefault(_header);
-
-var _icons = __webpack_require__(132);
-
-var _icons2 = _interopRequireDefault(_icons);
-
-var _nav = __webpack_require__(133);
-
-var _nav2 = _interopRequireDefault(_nav);
+var _navigation2 = _interopRequireDefault(_navigation);
 
 var _footer = __webpack_require__(129);
 
@@ -16014,10 +16006,6 @@ var _notFound = __webpack_require__(77);
 
 var _notFound2 = _interopRequireDefault(_notFound);
 
-var _backdrop = __webpack_require__(130);
-
-var _backdrop2 = _interopRequireDefault(_backdrop);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16034,41 +16022,6 @@ var Template = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Template.__proto__ || Object.getPrototypeOf(Template)).call(this, props));
 
-    _this.showMenu = function (event) {
-      if (_this.state.menuDisplay === '') {
-        _this.setState({
-          menuDisplay: 'flex',
-          showBackdrop: true
-        });
-      } else {
-        _this.setState({
-          menuDisplay: '',
-          showBackdrop: false
-        });
-      }
-    };
-
-    _this.hideMenu = function (event) {
-      if (_this.state.menuDisplay === 'flex') {
-        _this.setState({
-          menuDisplay: '',
-          showBackdrop: false
-        });
-      }
-    };
-
-    _this.showAndHideSearcher = function (event) {
-      if (_this.state.searcherDisplay === '') {
-        _this.setState({
-          searcherDisplay: 'flex'
-        });
-      } else {
-        _this.setState({
-          searcherDisplay: ''
-        });
-      }
-    };
-
     _this.getText = function (event) {
       _this.setState({
         link: event.target.parentElement.previousSibling.value
@@ -16077,10 +16030,7 @@ var Template = function (_React$Component) {
     };
 
     _this.state = {
-      menuDisplay: '',
-      searcherDisplay: '',
-      link: '',
-      showBackdrop: false
+      link: ''
     };
     return _this;
   }
@@ -16099,10 +16049,7 @@ var Template = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { id: 'all' },
-          _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.getText }),
-          _react2.default.createElement(_icons2.default, { showMenu: this.showMenu, showAndHideSearcher: this.showAndHideSearcher }),
-          _react2.default.createElement(_backdrop2.default, { show: this.state.showBackdrop, hideMenu: this.hideMenu }),
-          _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay }),
+          _react2.default.createElement(_navigation2.default, { getText: this.getText }),
           _react2.default.createElement(
             'div',
             { className: 'content' },
@@ -29507,6 +29454,123 @@ module.exports = function (str) {
 __webpack_require__(126);
 module.exports = __webpack_require__(125);
 
+
+/***/ }),
+/* 262 */,
+/* 263 */,
+/* 264 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(89);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _header = __webpack_require__(131);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _icons = __webpack_require__(132);
+
+var _icons2 = _interopRequireDefault(_icons);
+
+var _nav = __webpack_require__(133);
+
+var _nav2 = _interopRequireDefault(_nav);
+
+var _backdrop = __webpack_require__(130);
+
+var _backdrop2 = _interopRequireDefault(_backdrop);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Navigation = function (_React$Component) {
+  _inherits(Navigation, _React$Component);
+
+  function Navigation(props) {
+    _classCallCheck(this, Navigation);
+
+    var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
+
+    _this.showMenu = function (event) {
+      if (_this.state.menuDisplay === '') {
+        _this.setState({
+          menuDisplay: 'flex',
+          showBackdrop: true
+        });
+      } else {
+        _this.setState({
+          menuDisplay: '',
+          showBackdrop: false
+        });
+      }
+    };
+
+    _this.hideMenu = function (event) {
+      if (_this.state.menuDisplay === 'flex') {
+        _this.setState({
+          menuDisplay: '',
+          showBackdrop: false
+        });
+      }
+    };
+
+    _this.showAndHideSearcher = function (event) {
+      if (_this.state.searcherDisplay === '') {
+        _this.setState({
+          searcherDisplay: 'flex'
+        });
+      } else {
+        _this.setState({
+          searcherDisplay: ''
+        });
+      }
+    };
+
+    _this.state = {
+      menuDisplay: '',
+      searcherDisplay: '',
+      showBackdrop: false
+    };
+    return _this;
+  }
+
+  _createClass(Navigation, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_header2.default, { display: this.state.searcherDisplay, getText: this.props.getText }),
+        _react2.default.createElement(_icons2.default, { showMenu: this.showMenu, showAndHideSearcher: this.showAndHideSearcher }),
+        _react2.default.createElement(_backdrop2.default, { show: this.state.showBackdrop, hideMenu: this.hideMenu }),
+        _react2.default.createElement(_nav2.default, { display: this.state.menuDisplay })
+      );
+    }
+  }]);
+
+  return Navigation;
+}(_react2.default.Component);
+
+exports.default = Navigation;
 
 /***/ })
 /******/ ]);
