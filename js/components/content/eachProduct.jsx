@@ -1,20 +1,24 @@
 import React from 'react';
+import Spinner from './spinner.jsx';
 
 class EachProduct extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      product: []
+      product: [],
+      loading: false
     }
   }
 
   getProductInfo(){
+    this.setState({loading: true});
     const productLink = `https://www.peruwianskiedary.pl/categories/products/${this.props.params.id}`;
     fetch(productLink)
     .then(resp => resp.json())
     .then(data => {
       this.setState({
-        product: data
+        product: data,
+        loading: false
       })
     })
   }
@@ -28,7 +32,7 @@ class EachProduct extends React.Component {
     if (window.innerWidth >= 768) {
       app.style.backgroundImage	=	"url(images/Fotolia_69824599_L.jpg)";
     }
-    const eachProduct = (
+    let eachProduct = (
       <div className="product">
         <h1>{this.state.product.name}</h1>
         <div className="imageDescription">
@@ -55,7 +59,10 @@ class EachProduct extends React.Component {
           <button>Kup teraz</button>
         </a>
       </div>
-    )
+    );
+    if(this.state.loading) {
+      eachProduct = <Spinner />
+    }
     return (
       <section className="eachProduct">
         <div className="container">{eachProduct}</div>

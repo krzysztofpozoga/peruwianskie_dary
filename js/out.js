@@ -8479,6 +8479,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(14);
 
+var _spinner = __webpack_require__(263);
+
+var _spinner2 = _interopRequireDefault(_spinner);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8496,7 +8500,8 @@ var Ekstrakty = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Ekstrakty.__proto__ || Object.getPrototypeOf(Ekstrakty)).call(this, props));
 
     _this.state = {
-      products: []
+      products: [],
+      loading: false
     };
     return _this;
   }
@@ -8506,12 +8511,14 @@ var Ekstrakty = function (_React$Component) {
     value: function getProductsData() {
       var _this2 = this;
 
+      this.setState({ loading: true });
       var link = 'https://www.peruwianskiedary.pl/categories/3/products';
       fetch(link).then(function (resp) {
         return resp.json();
       }).then(function (data) {
         _this2.setState({
-          products: data
+          products: data,
+          loading: false
         });
       });
     }
@@ -8572,6 +8579,9 @@ var Ekstrakty = function (_React$Component) {
           )
         );
       });
+      if (this.state.loading) {
+        products = _react2.default.createElement(_spinner2.default, null);
+      }
       return _react2.default.createElement(
         'div',
         { className: 'listOfProducts' },
@@ -8697,6 +8707,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(14);
 
+var _spinner = __webpack_require__(263);
+
+var _spinner2 = _interopRequireDefault(_spinner);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8714,7 +8728,8 @@ var Maka = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Maka.__proto__ || Object.getPrototypeOf(Maka)).call(this, props));
 
     _this.state = {
-      products: []
+      products: [],
+      loading: false
     };
     return _this;
   }
@@ -8724,12 +8739,14 @@ var Maka = function (_React$Component) {
     value: function getProductsData() {
       var _this2 = this;
 
+      this.setState({ loading: true });
       var link = 'https://www.peruwianskiedary.pl/categories/2/products';
       fetch(link).then(function (resp) {
         return resp.json();
       }).then(function (data) {
         _this2.setState({
-          products: data
+          products: data,
+          loading: false
         });
       });
     }
@@ -8790,6 +8807,9 @@ var Maka = function (_React$Component) {
           )
         );
       });
+      if (this.state.loading) {
+        products = _react2.default.createElement(_spinner2.default, null);
+      }
       return _react2.default.createElement(
         'div',
         { className: 'listOfProducts' },
@@ -8897,6 +8917,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(14);
 
+var _spinner = __webpack_require__(263);
+
+var _spinner2 = _interopRequireDefault(_spinner);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8914,7 +8938,8 @@ var SuperFoods = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (SuperFoods.__proto__ || Object.getPrototypeOf(SuperFoods)).call(this, props));
 
     _this.state = {
-      products: []
+      products: [],
+      loading: false
     };
     return _this;
   }
@@ -8924,12 +8949,14 @@ var SuperFoods = function (_React$Component) {
     value: function getProductsData() {
       var _this2 = this;
 
+      this.setState({ loading: true });
       var link = 'https://www.peruwianskiedary.pl/categories/4/products';
       fetch(link).then(function (resp) {
         return resp.json();
       }).then(function (data) {
         _this2.setState({
-          products: data
+          products: data,
+          loading: false
         });
       });
     }
@@ -8990,6 +9017,9 @@ var SuperFoods = function (_React$Component) {
           )
         );
       });
+      if (this.state.loading) {
+        products = _react2.default.createElement(_spinner2.default, null);
+      }
       return _react2.default.createElement(
         'div',
         { className: 'listOfProducts' },
@@ -15136,6 +15166,10 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _spinner = __webpack_require__(263);
+
+var _spinner2 = _interopRequireDefault(_spinner);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -15153,7 +15187,8 @@ var EachProduct = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (EachProduct.__proto__ || Object.getPrototypeOf(EachProduct)).call(this, props));
 
     _this.state = {
-      product: []
+      product: [],
+      loading: false
     };
     return _this;
   }
@@ -15163,12 +15198,14 @@ var EachProduct = function (_React$Component) {
     value: function getProductInfo() {
       var _this2 = this;
 
+      this.setState({ loading: true });
       var productLink = 'https://www.peruwianskiedary.pl/categories/products/' + this.props.params.id;
       fetch(productLink).then(function (resp) {
         return resp.json();
       }).then(function (data) {
         _this2.setState({
-          product: data
+          product: data,
+          loading: false
         });
       });
     }
@@ -15263,6 +15300,9 @@ var EachProduct = function (_React$Component) {
           )
         )
       );
+      if (this.state.loading) {
+        eachProduct = _react2.default.createElement(_spinner2.default, null);
+      }
       return _react2.default.createElement(
         'section',
         { className: 'eachProduct' },
@@ -15299,6 +15339,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(14);
 
+var _spinner = __webpack_require__(263);
+
+var _spinner2 = _interopRequireDefault(_spinner);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -15317,7 +15361,8 @@ var SearchedProducts = function (_React$Component) {
 
     console.log(_this);
     _this.state = {
-      products: []
+      products: [],
+      loading: false
     };
     return _this;
   }
@@ -15327,13 +15372,15 @@ var SearchedProducts = function (_React$Component) {
     value: function getProductsData() {
       var _this2 = this;
 
+      this.setState({ loading: true });
       if (this.props.link != '') {
         var link = 'https://www.peruwianskiedary.pl/categories/products/search?phrase=' + this.props.link;
         fetch(link).then(function (resp) {
           return resp.json();
         }).then(function (data) {
           _this2.setState({
-            products: data
+            products: data,
+            loading: false
           });
         });
       }
@@ -15404,6 +15451,9 @@ var SearchedProducts = function (_React$Component) {
           )
         );
       });
+      if (this.state.loading) {
+        products = _react2.default.createElement(_spinner2.default, null);
+      }
       return _react2.default.createElement(
         'div',
         { className: 'listOfProducts' },
